@@ -9,11 +9,11 @@ Welcome to dolphin's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
-   Dolphin-Docker
-   Dolphin-Tools
-   Dolphin-UI
+   dolphin-docker/Dolphin-Docker.rst
+   dolphin-tools/Dolphin-Tools.rst
+   dolphin-ui/Dolphin-UI.rst
 
 
 Indices and tables
