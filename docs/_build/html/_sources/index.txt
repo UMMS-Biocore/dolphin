@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to dolphin's documentation!
+Welcome to Dolphin's Documentation!
 ===================================
 
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    dolphin-docker/Dolphin-Docker.rst
    dolphin-tools/Dolphin-Tools.rst
