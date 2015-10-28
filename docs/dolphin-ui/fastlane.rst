@@ -9,7 +9,7 @@ Getting Started
 
 First, make sure to have an instance of dolphin available (see Dolphin Docker) as well as an account for the dolphin interface.
 
-Once logged in, click on the 'Fastlane' tab on the left, then click on 'NGS Browser'.
+Once logged in, click on the 'NGS Tracking' tab on the left, then click on 'Fastlane'.
 
 .. image:: dolphin_pics/menu_bar.png
 	:align: center
@@ -69,6 +69,9 @@ This section will determine the name of the import.
 
 If adding to an already created import, please be sure to input the exact name of the import to add to.
 
+.. image:: dolphin_pics/fastlane_yes_bar.png
+        :align: center
+
 **Input Directory:**
 
 This section will list the exact location of all of the fastq files within the cluster.
@@ -123,8 +126,16 @@ This section the amazon bucket link which you may give to have the data backed u
 
 Filling out this section is optional.
 
+.. image:: dolphin_pics/fastlane_input.png
+        :align: center
+
 Submission
 ==========
+
+Before you get ready to submit, make sure to check which group you wish to submit under and who has permissions to view your data.
+
+.. image:: dolphin_pics/fastlane_perms.png
+        :align: center
 
 Once you've filled out all the appropriate information, you're now ready to hit the submit button to start your initial run.
 

@@ -52,20 +52,24 @@ This tab will ask for information on:
 
 * *contributor:* First name, Initial, Last name.  You may add additional contributors by creating more 'contributor' cells in the A column with the actual contributors in the B column.
 
+* *processed directory:* Full path for the output directory
+
+* *amazon bucket:* Optional amazon bucket link
+
 This is the only tab that will ask for information in a single column (column B).  The rest of the tabs will ask for information in rows.
 
 Note that to add additional Imports/Samples to an already exsisting Experiment Series, the information about the experiment must be identical to that you are adding to.
-Fastq directory, backup directory, and amazon bucket does not have to be identical for each submission.
+Processed director, and amazon bucket does not have to be identical for each submission.
 
-**LANES:**
+**IMPORTS:**
 
-The Lanes tab will contain information about lanes/imports of the samples being submitted.
+The Imports tab will contain information about lanes/imports of the samples being submitted.
 
-There can be multiple lanes/imports within this tab, each one residing on it's own row.
+There can be multiple imports within this tab, each one residing on it's own row.
 
-Information on lanes/imports include:
+Information on imports include:
 
-* *Lane Name:* The name of the lane/import being submitted.
+* *Import Name:* The name of the import being submitted.
 
 * *Sequencing id:* The id from the sequencing facility.
 
@@ -81,13 +85,13 @@ Information on lanes/imports include:
 
 * *% PhiX in lane:* Actual amount of PhiX in lane.
 
-* *# of Samples:* Number of samples within lane.
+* *# of Samples:* Number of samples within import.
 
-* *Resequenced?:*  Was this lane resequenced?
+* *Resequenced?:*  Was this import resequenced?
 
-* *Notes:* Additional notes about this lane.
+* *Notes:* Additional notes about this import.
 
-Please note that lane name and sequencing id are required for submission.
+Please note that import name is required for submission.
 
 **PROTOCOLS:**
 
@@ -125,7 +129,7 @@ Sample information includes:
 
 * *Sample name:* The name of the sample.
 
-* *Lane name:* The name of the lane in which the sample resides.  This lane must be present in the Lanes tab.
+* *Import name:* The name of the import in which the sample resides.  This import must be present in the Imports tab.
 
 * *Protocol name:* The name of the protocol in which the sample used. This protocol must be present in the Protocols tab.
 
@@ -183,7 +187,7 @@ Sample information includes:
 
 * *characteristics: tag:* Biosource characteristic.
 
-Please note that Sample name must be present and the Lane name and Protocol name must match one provided in their respected tabs.
+Please note that Sample name must be present and the Import name and Protocol name must match one provided in their respected tabs.
 
 **DIRS:**
 
@@ -195,21 +199,17 @@ Directory information includes:
 
 * *Directory ID:* A specified ID to associate to files within the file tab.
 
-* *Fastq directory:* Location within the cluster/host machine where the fastq files for this submission are stored.
-
-* *Backup directory:* Location in which backups for the results should be stored within the cluster/host machine.
-
-* *Amazon bucket:* Amazon bucket link for amazon backup storage.
+* *Input directory:* Location within the cluster/host machine where the fastq files for this submission are stored.
 
 **FILES:**
 
-The Files tab will hold the files associated with either lanes or samples.
+The Files tab will hold the files associated with either imports or samples.
 
-There can be multiple entries on this tab, as well as multiple entries per lane or sample.
+There can be multiple entries on this tab, as well as multiple entries per import or sample.
 
 File information includes:
 
-* *Sample or Lane Name (Enter same name for multiple files):* The sample or lane name.  These names must be within there respected tabs.
+* *Sample or Import Name (Enter same name for multiple files):* The sample or import name.  These names must be within there respected tabs.
 
 * *Directory ID:* A specified ID to associate to directories within the dirs tab.
 
