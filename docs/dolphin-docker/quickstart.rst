@@ -1,6 +1,6 @@
-*********
+*****************
 Quick Start Guide
-*********
+*****************
 
 This guide will walk you through how to starty using dolphin workflows.
 

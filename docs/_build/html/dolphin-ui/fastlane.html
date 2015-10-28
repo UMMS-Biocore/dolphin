@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="dolphin 1.0 documentation" href="../index.html"/> 
+    <link rel="top" title="dolphin 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Dolphin-UI" href="Dolphin-UI.html"/>
+        <link rel="next" title="NGS Browser Guide" href="ngsbrowser.html"/>
+        <link rel="prev" title="Excel Import Guide" href="excelimport.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -79,10 +82,26 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../dolphin-docker/Dolphin-Docker.html">Dolphin-Docker</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dolphin-tools/Dolphin-Tools.html">Dolphin-Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Dolphin-UI.html">Dolphin-UI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Dolphin-UI.html">Dolphin-UI</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="excelimport.html">Excel Import Guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Fastlane Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fastlane-input">Fastlane Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submission">Submission</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ngsbrowser.html">NGS Browser Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="excelexport.html">Excel Export Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngspipeline.html">NGS Pipeline Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsstatus.html">NGS Status Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsreports.html">NGS Reports Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsplots.html">NGS Plots Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tablecreator.html">Table Creator Guide</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -113,6 +132,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="Dolphin-UI.html">Dolphin-UI</a> &raquo;</li>
+      
     <li>Fastlane Guide</li>
       <li class="wy-breadcrumbs-aside">
         
@@ -133,7 +154,7 @@
 <div class="section" id="getting-started">
 <h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <p>First, make sure to have an instance of dolphin available (see Dolphin Docker) as well as an account for the dolphin interface.</p>
-<p>Once logged in, click on the &#8216;Fastlane&#8217; tab on the left, then click on &#8216;NGS Browser&#8217;.</p>
+<p>Once logged in, click on the &#8216;NGS Tracking&#8217; tab on the left, then click on &#8216;Fastlane&#8217;.</p>
 <img alt="../_images/menu_bar.png" class="align-center" src="../_images/menu_bar.png" />
 </div>
 <div class="section" id="fastlane-input">
@@ -164,6 +185,7 @@
 <p><strong>Import Name:</strong></p>
 <p>This section will determine the name of the import.</p>
 <p>If adding to an already created import, please be sure to input the exact name of the import to add to.</p>
+<img alt="../_images/fastlane_yes_bar.png" class="align-center" src="../_images/fastlane_yes_bar.png" />
 <p><strong>Input Directory:</strong></p>
 <p>This section will list the exact location of all of the fastq files within the cluster.</p>
 <p>If files are not all within the same directory, it&#8217;s advised to either switch to importing via the Excel Import section or to move the files to a unified location.</p>
@@ -203,9 +225,12 @@
 <p><strong>Amazon Bucket:</strong></p>
 <p>This section the amazon bucket link which you may give to have the data backed up into amazon.</p>
 <p>Filling out this section is optional.</p>
+<img alt="../_images/fastlane_input.png" class="align-center" src="../_images/fastlane_input.png" />
 </div>
 <div class="section" id="submission">
 <h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
+<p>Before you get ready to submit, make sure to check which group you wish to submit under and who has permissions to view your data.</p>
+<img alt="../_images/fastlane_perms.png" class="align-center" src="../_images/fastlane_perms.png" />
 <p>Once you&#8217;ve filled out all the appropriate information, you&#8217;re now ready to hit the submit button to start your initial run.</p>
 <p>After hitting the submit button at the bottom of the page, you will be taken to a submission page that will check your imput to make sure everything in the tabs is sufficient.</p>
 <p>Sample names, whether entered in the Barcode Separation tab or within the Input Files tab, must not exist within the import you are trying to add to.</p>
@@ -217,6 +242,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ngsbrowser.html" class="btn btn-neutral float-right" title="NGS Browser Guide" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="excelimport.html" class="btn btn-neutral" title="Excel Import Guide" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

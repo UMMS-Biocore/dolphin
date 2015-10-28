@@ -100,6 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="ngsstatus.html">NGS Status Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ngsreports.html">NGS Reports Guide</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ngsplots.html">NGS Plots Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tablecreator.html">Table Creator Guide</a></li>
 </ul>
 </li>
 </ul>
@@ -179,16 +180,18 @@
 <li><em>organization:</em> The organization behind the project</li>
 <li><em>lab:</em> The lab within the organization</li>
 <li><em>contributor:</em> First name, Initial, Last name.  You may add additional contributors by creating more &#8216;contributor&#8217; cells in the A column with the actual contributors in the B column.</li>
+<li><em>processed directory:</em> Full path for the output directory</li>
+<li><em>amazon bucket:</em> Optional amazon bucket link</li>
 </ul>
 <p>This is the only tab that will ask for information in a single column (column B).  The rest of the tabs will ask for information in rows.</p>
 <p>Note that to add additional Imports/Samples to an already exsisting Experiment Series, the information about the experiment must be identical to that you are adding to.
-Fastq directory, backup directory, and amazon bucket does not have to be identical for each submission.</p>
-<p><strong>LANES:</strong></p>
-<p>The Lanes tab will contain information about lanes/imports of the samples being submitted.</p>
-<p>There can be multiple lanes/imports within this tab, each one residing on it&#8217;s own row.</p>
-<p>Information on lanes/imports include:</p>
+Processed director, and amazon bucket does not have to be identical for each submission.</p>
+<p><strong>IMPORTS:</strong></p>
+<p>The Imports tab will contain information about lanes/imports of the samples being submitted.</p>
+<p>There can be multiple imports within this tab, each one residing on it&#8217;s own row.</p>
+<p>Information on imports include:</p>
 <ul class="simple">
-<li><em>Lane Name:</em> The name of the lane/import being submitted.</li>
+<li><em>Import Name:</em> The name of the import being submitted.</li>
 <li><em>Sequencing id:</em> The id from the sequencing facility.</li>
 <li><em>Sequencing facility:</em> Location of where sequencing took place.</li>
 <li><em>Cost:</em> The cost of the sequencing.</li>
@@ -196,11 +199,11 @@ Fastq directory, backup directory, and amazon bucket does not have to be identic
 <li><em>Date received:</em> Date of sequencing results.</li>
 <li><em>% PhiX requested:</em> The requested amount of PhiX in lane.</li>
 <li><em>% PhiX in lane:</em> Actual amount of PhiX in lane.</li>
-<li><em># of Samples:</em> Number of samples within lane.</li>
-<li><em>Resequenced?:</em>  Was this lane resequenced?</li>
-<li><em>Notes:</em> Additional notes about this lane.</li>
+<li><em># of Samples:</em> Number of samples within import.</li>
+<li><em>Resequenced?:</em>  Was this import resequenced?</li>
+<li><em>Notes:</em> Additional notes about this import.</li>
 </ul>
-<p>Please note that lane name and sequencing id are required for submission.</p>
+<p>Please note that import name is required for submission.</p>
 <p><strong>PROTOCOLS:</strong></p>
 <p>The Protocols tab will contain information about the specific protocols used within the submission.</p>
 <p>There can be multiple protocols within this tab, each one residing on it&#8217;s own row.</p>
@@ -222,7 +225,7 @@ Fastq directory, backup directory, and amazon bucket does not have to be identic
 <p>Sample information includes:</p>
 <ul class="simple">
 <li><em>Sample name:</em> The name of the sample.</li>
-<li><em>Lane name:</em> The name of the lane in which the sample resides.  This lane must be present in the Lanes tab.</li>
+<li><em>Import name:</em> The name of the import in which the sample resides.  This import must be present in the Imports tab.</li>
 <li><em>Protocol name:</em> The name of the protocol in which the sample used. This protocol must be present in the Protocols tab.</li>
 <li><em>barcode:</em> This samples barcode.</li>
 <li><em>title:</em> Descriptive title for the sample.</li>
@@ -252,23 +255,21 @@ Fastq directory, backup directory, and amazon bucket does not have to be identic
 <li><em>characteristics: newtag:</em> Biosource characteristic.</li>
 <li><em>characteristics: tag:</em> Biosource characteristic.</li>
 </ul>
-<p>Please note that Sample name must be present and the Lane name and Protocol name must match one provided in their respected tabs.</p>
+<p>Please note that Sample name must be present and the Import name and Protocol name must match one provided in their respected tabs.</p>
 <p><strong>DIRS:</strong></p>
 <p>Short for directories, this tab indicated all the of directories in which your fastq data are stored.</p>
 <p>There can be multiple entries on this tab.</p>
 <p>Directory information includes:</p>
 <ul class="simple">
 <li><em>Directory ID:</em> A specified ID to associate to files within the file tab.</li>
-<li><em>Fastq directory:</em> Location within the cluster/host machine where the fastq files for this submission are stored.</li>
-<li><em>Backup directory:</em> Location in which backups for the results should be stored within the cluster/host machine.</li>
-<li><em>Amazon bucket:</em> Amazon bucket link for amazon backup storage.</li>
+<li><em>Input directory:</em> Location within the cluster/host machine where the fastq files for this submission are stored.</li>
 </ul>
 <p><strong>FILES:</strong></p>
-<p>The Files tab will hold the files associated with either lanes or samples.</p>
-<p>There can be multiple entries on this tab, as well as multiple entries per lane or sample.</p>
+<p>The Files tab will hold the files associated with either imports or samples.</p>
+<p>There can be multiple entries on this tab, as well as multiple entries per import or sample.</p>
 <p>File information includes:</p>
 <ul class="simple">
-<li><em>Sample or Lane Name (Enter same name for multiple files):</em> The sample or lane name.  These names must be within there respected tabs.</li>
+<li><em>Sample or Import Name (Enter same name for multiple files):</em> The sample or import name.  These names must be within there respected tabs.</li>
 <li><em>Directory ID:</em> A specified ID to associate to directories within the dirs tab.</li>
 <li><em>file name(comma separated for paired ends):</em> The file fastq file name.  If paired end, list both files seperated by a comma.</li>
 </ul>

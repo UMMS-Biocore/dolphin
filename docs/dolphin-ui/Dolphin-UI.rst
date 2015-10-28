@@ -19,4 +19,4 @@ Contents:
    ngsstatus
    ngsreports
    ngsplots
-
+   tablecreator

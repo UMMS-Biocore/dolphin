@@ -57,7 +57,7 @@ The data tables are the main highlight of the NGS Browser.
 Starting at the top right of the page, 3 tables followed by a series of button options will follow.  These tables show information about:
 
 * Experiment Series
-* Imports (lanes)
+* Imports
 * Samples
 
 There are some helpful tools and information at the top of each table.  On the left you have the tables name, and on the right you have an expanding option which will let you see more detailed information about the contents of the specific table followed by an info button that also explains some additional information.
