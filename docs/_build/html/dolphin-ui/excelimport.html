@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Excel Import Guide &mdash; dolphin 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="dolphin 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="Dolphin-UI" href="Dolphin-UI.html"/>
+        <link rel="next" title="Fastlane Guide" href="fastlane.html"/>
+        <link rel="prev" title="Dolphin-UI" href="Dolphin-UI.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> dolphin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dolphin-docker/Dolphin-Docker.html">Dolphin-Docker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dolphin-tools/Dolphin-Tools.html">Dolphin-Tools</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Dolphin-UI.html">Dolphin-UI</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Excel Import Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#filling-out-the-excel-file">Filling Out the Excel File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preparing-for-submission-of-your-excel-spreadsheet">Preparing for Submission of Your Excel Spreadsheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#submission">Submission</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fastlane.html">Fastlane Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsbrowser.html">NGS Browser Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="excelexport.html">Excel Export Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngspipeline.html">NGS Pipeline Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsstatus.html">NGS Status Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsreports.html">NGS Reports Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ngsplots.html">NGS Plots Guide</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">dolphin</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Dolphin-UI.html">Dolphin-UI</a> &raquo;</li>
+      
+    <li>Excel Import Guide</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/dolphin-ui/excelimport.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="excel-import-guide">
+<h1>Excel Import Guide<a class="headerlink" href="#excel-import-guide" title="Permalink to this headline">¶</a></h1>
+<p>This guide will walk you through the process of importing via the Excel Import page</p>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>First, make sure to have an instance of dolphin available (see Dolphin Docker) as well as an account for the dolphin interface.</p>
+<p>Once logged in, click on the &#8216;NGS Tracking&#8217; tab on the left, then click on &#8216;Excel Import&#8217;.</p>
+<img alt="../_images/menu_bar.png" class="align-center" src="../_images/menu_bar.png" />
+<p>From here, under the &#8216;Excel file input&#8217; button, there is a link to download an example excel input.  Download the example file and you&#8217;ll be ready to start adding your data.</p>
+<p>You can also download the example spreadsheet here:</p>
+<blockquote>
+<div><p><a class="reference download internal" href="../_downloads/example_template.xls"><code class="xref download docutils literal"><span class="pre">single</span> <span class="pre">input</span> <span class="pre">directory</span></code></a></p>
+<p><a class="reference download internal" href="../_downloads/example_template_multi_dirs.xls"><code class="xref download docutils literal"><span class="pre">multiple</span> <span class="pre">input</span> <span class="pre">directories</span></code></a></p>
+</div></blockquote>
+</div>
+<div class="section" id="filling-out-the-excel-file">
+<h2>Filling Out the Excel File<a class="headerlink" href="#filling-out-the-excel-file" title="Permalink to this headline">¶</a></h2>
+<p>The example spreadsheet already contains faux information to give users some context to the information they will be replacing.</p>
+<p>Certain header cells within the spreadsheet are marked with a red arrow on the top right of the cell.  Hovering over these cells with your mouse will give you more details on what each row or column that they demark should include.</p>
+<p>The spreadsheet contains multiple tabs that will help you organize your information properly.</p>
+<img alt="../_images/excel_tabs.png" class="align-center" src="../_images/excel_tabs.png" />
+<p><strong>META-DATA:</strong></p>
+<p>The first tab of the spreadsheet is the Metadata tab.  This tab will reference to specific information about the experiment series at hand.</p>
+<p>This tab will ask for information on:</p>
+<ul class="simple">
+<li><em>title:</em> The unique title of the Experiment Series</li>
+<li><em>summary:</em> Detailed description of the goals/objectives of the Experiment Series</li>
+<li><em>overall design:</em> Describe the design details of the Experiment Series</li>
+<li><em>organization:</em> The organization behind the project</li>
+<li><em>lab:</em> The lab within the organization</li>
+<li><em>contributor:</em> First name, Initial, Last name.  You may add additional contributors by creating more &#8216;contributor&#8217; cells in the A column with the actual contributors in the B column.</li>
+</ul>
+<p>This is the only tab that will ask for information in a single column (column B).  The rest of the tabs will ask for information in rows.</p>
+<p>Note that to add additional Imports/Samples to an already exsisting Experiment Series, the information about the experiment must be identical to that you are adding to.
+Fastq directory, backup directory, and amazon bucket does not have to be identical for each submission.</p>
+<p><strong>LANES:</strong></p>
+<p>The Lanes tab will contain information about lanes/imports of the samples being submitted.</p>
+<p>There can be multiple lanes/imports within this tab, each one residing on it&#8217;s own row.</p>
+<p>Information on lanes/imports include:</p>
+<ul class="simple">
+<li><em>Lane Name:</em> The name of the lane/import being submitted.</li>
+<li><em>Sequencing id:</em> The id from the sequencing facility.</li>
+<li><em>Sequencing facility:</em> Location of where sequencing took place.</li>
+<li><em>Cost:</em> The cost of the sequencing.</li>
+<li><em>Date submitted:</em> Date of request for sequencing.</li>
+<li><em>Date received:</em> Date of sequencing results.</li>
+<li><em>% PhiX requested:</em> The requested amount of PhiX in lane.</li>
+<li><em>% PhiX in lane:</em> Actual amount of PhiX in lane.</li>
+<li><em># of Samples:</em> Number of samples within lane.</li>
+<li><em>Resequenced?:</em>  Was this lane resequenced?</li>
+<li><em>Notes:</em> Additional notes about this lane.</li>
+</ul>
+<p>Please note that lane name and sequencing id are required for submission.</p>
+<p><strong>PROTOCOLS:</strong></p>
+<p>The Protocols tab will contain information about the specific protocols used within the submission.</p>
+<p>There can be multiple protocols within this tab, each one residing on it&#8217;s own row.</p>
+<p>Protocol information includes:</p>
+<ul class="simple">
+<li><em>protocol name:</em> The name of the protocol.</li>
+<li><em>growth protocol:</em> Protocols used to grow the organism/cells.</li>
+<li><em>extract protocol:</em> Protocols used to extract/prepare the sequenced material.</li>
+<li><em>library construction protocol:</em> Library contruction protocol.</li>
+<li><em>crosslinking method:</em> The crosslinking method if any.</li>
+<li><em>fragmentation method:</em> The fragmentation method if any.</li>
+<li><em>strand-specific:</em> Is this protocol strand specific?</li>
+<li><em>library strategy:</em> Sequencing techniques of this library.</li>
+</ul>
+<p>Please note that protocol name is required for submission.</p>
+<p><strong>SAMPLES:</strong></p>
+<p>The Samples tab will contain information about the samples within the submission.</p>
+<p>There can be multiple samples within this tab, each one residing on it&#8217;s own row.</p>
+<p>Sample information includes:</p>
+<ul class="simple">
+<li><em>Sample name:</em> The name of the sample.</li>
+<li><em>Lane name:</em> The name of the lane in which the sample resides.  This lane must be present in the Lanes tab.</li>
+<li><em>Protocol name:</em> The name of the protocol in which the sample used. This protocol must be present in the Protocols tab.</li>
+<li><em>barcode:</em> This samples barcode.</li>
+<li><em>title:</em> Descriptive title for the sample.</li>
+<li><em>batch id:</em> This samples batch id.</li>
+<li><em>source symbol:</em> Symbol used for the Source.  Symbol is a 4 character string.</li>
+<li><em>source:</em> Brief description of cell line, biological material, or tissue.</li>
+<li><em>organism:</em> List the organism from which this sample came from.</li>
+<li><em>biosample type:</em> Type of biosample, ie. in vitro.</li>
+<li><em>molecule:</em> Type of molecule extracted from the sample.</li>
+<li><em>description:</em> Added information that pertains to other fields.</li>
+<li><em>instrument model:</em> Sequencing instrument used.</li>
+<li><em>average insert size:</em> Average paired-end insert size.</li>
+<li><em>read length:</em> The length of the reads.</li>
+<li><em>Genotype:</em> The genotype of the sample.</li>
+<li><em>Condition Symbol:</em> Symbols representing the conditions from the condition column.  Multiple condition symbols may be present if multiple conditions match the symbols and they are comma separated.</li>
+<li><em>Condition:</em> Specific condition(s) pertaining to the sample.  Multiple conditions may be present as long as they are comma separated.</li>
+<li><em>concentration:</em> Concentration of Conditions.</li>
+<li><em>treatment manufacturer:</em> Manufacturer of treatments.</li>
+<li><em>Donor:</em> Name of sample donor, Typically in the D## format.</li>
+<li><em>Time:</em> Time (in minutes) post treatment.</li>
+<li><em>Biological Replica:</em> Biological replica number.</li>
+<li><em>Technical Replica:</em> Technical Replica number.</li>
+<li><em>spikeins:</em> Yes or No based on if spike-ins were introduced into the sample.</li>
+<li><em>3&#8217; Adapter sequence:</em>  3&#8217; Adapter sequence if present.</li>
+<li><em>Notebook reference:</em> Reference notebook information.</li>
+<li><em>notes:</em>  Any other additional notes for the sample.</li>
+<li><em>characteristics: newtag:</em> Biosource characteristic.</li>
+<li><em>characteristics: tag:</em> Biosource characteristic.</li>
+</ul>
+<p>Please note that Sample name must be present and the Lane name and Protocol name must match one provided in their respected tabs.</p>
+<p><strong>DIRS:</strong></p>
+<p>Short for directories, this tab indicated all the of directories in which your fastq data are stored.</p>
+<p>There can be multiple entries on this tab.</p>
+<p>Directory information includes:</p>
+<ul class="simple">
+<li><em>Directory ID:</em> A specified ID to associate to files within the file tab.</li>
+<li><em>Fastq directory:</em> Location within the cluster/host machine where the fastq files for this submission are stored.</li>
+<li><em>Backup directory:</em> Location in which backups for the results should be stored within the cluster/host machine.</li>
+<li><em>Amazon bucket:</em> Amazon bucket link for amazon backup storage.</li>
+</ul>
+<p><strong>FILES:</strong></p>
+<p>The Files tab will hold the files associated with either lanes or samples.</p>
+<p>There can be multiple entries on this tab, as well as multiple entries per lane or sample.</p>
+<p>File information includes:</p>
+<ul class="simple">
+<li><em>Sample or Lane Name (Enter same name for multiple files):</em> The sample or lane name.  These names must be within there respected tabs.</li>
+<li><em>Directory ID:</em> A specified ID to associate to directories within the dirs tab.</li>
+<li><em>file name(comma separated for paired ends):</em> The file fastq file name.  If paired end, list both files seperated by a comma.</li>
+</ul>
+</div>
+<div class="section" id="preparing-for-submission-of-your-excel-spreadsheet">
+<h2>Preparing for Submission of Your Excel Spreadsheet<a class="headerlink" href="#preparing-for-submission-of-your-excel-spreadsheet" title="Permalink to this headline">¶</a></h2>
+<p>Once you&#8217;ve filled out your spreadsheet with all of your desired information, make sure to double check everything is in order.  If your file seems to be filled out properly, we&#8217;re ready to submit.</p>
+<p>If you haven&#8217;t yet already, head back to the excel import page.</p>
+<p><strong>Excel file input:</strong></p>
+<img alt="../_images/file_input.png" class="align-center" src="../_images/file_input.png" />
+<p>Click on the &#8216;Choose File&#8217; button to select your excel spreadsheet&#8217;s path and click open.  Once your file has been selected, the file name should appear to the left of the button.</p>
+<p><strong>Project Group:</strong></p>
+<img alt="../_images/project_group.png" class="align-center" src="../_images/project_group.png" />
+<p>This section will select the group in which you would like to submit this project under.  The drop down menu should contain all of the groups that you are a member of.</p>
+<p>If you cannot select a group, contact your local administrator or <a class="reference external" href="mailto:'biocore&#37;&#52;&#48;umassmed&#46;edu">'biocore<span>&#64;</span>umassmed<span>&#46;</span>edu</a>&#8216;.</p>
+<p><strong>Who can see?:</strong></p>
+<img alt="../_images/import_perms.png" class="align-center" src="../_images/import_perms.png" />
+<p>This section will determine the security credentials of your submission.  You will select from one of 3 choices:</p>
+<ul class="simple">
+<li>only me</li>
+<li>only my group</li>
+<li>everyone</li>
+</ul>
+<p>Your selection will determine who can see the data you will be submitting.</p>
+</div>
+<div class="section" id="submission">
+<h2>Submission<a class="headerlink" href="#submission" title="Permalink to this headline">¶</a></h2>
+<p>Once you&#8217;ve followed these above steps, you&#8217;re ready to hit the submit button.</p>
+<p>You will be redirected to the next page where a series of checks overlook your submitted excel spreadsheet to make sure the proper information for submission was submitted.</p>
+<p>Each tab within the spreadsheet has its own section for checks, displaying green text if the tests pass.</p>
+<p>Yellow text is displayed with helpful information about cells that you may want to fill out, but are completely optional or able to be editted at a later point in time.</p>
+<p>If an error occurs from improper excel spreadsheet submission, red text describing the error will appear appear in the specified section.</p>
+<p><strong>Submission fails:</strong></p>
+<img alt="../_images/full_import_error.png" class="align-center" src="../_images/full_import_error.png" />
+<p>If your submission fails at least one of the checks in place, the data will not be submitted.</p>
+<p>You can then edit your spreadsheet based on the error output text and resubmit the spreadsheet to try again.</p>
+<p><strong>Submission passes:</strong></p>
+<img alt="../_images/passed_imports.png" class="align-center" src="../_images/passed_imports.png" />
+<p>If your submission passes, each section will contain green text saying that the section passed inspection.</p>
+<p>A brief explanation describing what is being inserted/updated within the database is shown, followed by a helpful message that reads:</p>
+<p>&#8220;We are currently processing your samples to obtain read counts and additional information.  You can check the status of these initial runs on your NGS Status page.&#8221;</p>
+<p>As stated by this message, the samples submitted are now in the initial processing step in which read counts and other additional information is obtained from the samples in order to run further analyses.</p>
+<p>You can check the status of this initial run in the &#8216;Run Status&#8217; page which can be found under &#8216;NGS Tracking&#8217; on the left menu bar.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="fastlane.html" class="btn btn-neutral float-right" title="Fastlane Guide" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Dolphin-UI.html" class="btn btn-neutral" title="Dolphin-UI" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Alper Kucukural, Nick Merowsky, Alistair Firth.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
