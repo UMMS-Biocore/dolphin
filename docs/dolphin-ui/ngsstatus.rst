@@ -52,7 +52,7 @@ Each status cooresponds to how the current run is behaving.  The statuses and th
 
 * *Stopped:* A stopped run has started to run, but was at one point manually stopped by a user.
 
-* *Error:* An errored run has had something go wrong and could not complete appropriately.
+* *Error:* An errored run has had something go wrong and could not complete appropriately.  By clicking the status button on an error, a window will pop-up with a little more information about the error.  If there are logs of the past processes, you can click the 'Adv. Status' button to be taken to the Advanced status page.
 
 * *Running:* A run that is currently running.
 
@@ -85,8 +85,28 @@ Rather than describing every set of options for every combination, we will go ov
 
 * *Generate Plots:*  Selecting this option will take you to the selected run's plot page.
 
-As of currently, deleted runs are recoverable, however you need to contact your local adminstrator or someone at 'biocore@umassmed.edu' in order to obtain them.
+**View Which Runs?:**
 
-Adv Status Page
+.. image:: dolphin_pics/status_sort.png
+	:align: center
+
+This dropdown menu will toggle which types of runs you will be viewing within the status table.
+
+The options include:
+
+* *All Runs:* This is the default setting.  All of the runs you have permissions to view will be displayed.
+* *Initial Runs:* This setting will display all of the initial runs you have permissions to view.
+* *Normal Runs:* This setting will display all of the runs that you have permissions to view that are not initial runs.
+
+Advanced Status Page
 ===============
 
+Upon clicking on a non-queued status, you will be directed to the advanced status page.
+
+This page displays a table with each step processed, or currently being processed within the system of your run.
+
+If the progress bar is green, then the step has fully finished without errors.  If the bar is red, it is either currently running or it has received an error within the step.
+
+Upon selecting the 'Select Service' button on the right of each step, another table will be shown of all the current subprocesses within this given step.
+
+Along with some additional information, the user can select the 'Select Job' button to view the standard output of this current job.

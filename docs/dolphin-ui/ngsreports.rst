@@ -21,7 +21,7 @@ Once you have a completed run, you can select the options button on the far righ
 .. image:: dolphin_pics/completed.png
 	:align: center
 	
-Selection this option will bring you to the Report Details page.
+Selecting this option will bring you to the Report Details page.
 
 Report Details
 ==============
@@ -63,11 +63,12 @@ These tabs include:
 * RSEM Results
 * DESEQ Results
 * Picard Metrics
+* RSeQC Metrics
 
 Expanding any of the FastQC tabs will provide a list of links related to either the FastQC summary or the specific sample FastQC results.
 Clicking one of these links will re-direct you to another page with the specified results.
 
-By expanding the RSEM, DESEQ, OR Picard Metrics tabs, you will be greeted with another dropdown menu like that within the Initial Mapping Results tab.
+By expanding the RSEM, DESEQ, Picard Metrics, or RSeQC tabs, you will be greeted with another dropdown menu like that within the Initial Mapping Results tab.
 
 The list provided within the dropdown menu will contain files related to the tab which is expanded.
 

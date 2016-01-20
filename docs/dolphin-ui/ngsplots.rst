@@ -25,6 +25,8 @@ Selection this option will bring you to the Plots page.
 
 Alternatively, You can visit the Reports page for a specified run and click on the 'Go To Plots' button at the bottom of the page to go to the plots page.
 
+Also, you can view your generated tables from the Generated Tables page by selecting to go to plots from the desired table.  Please see the 'Table Creator Guide' for additional information.
+
 Plots Navigation
 ================
 
