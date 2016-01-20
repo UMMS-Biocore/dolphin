@@ -87,3 +87,6 @@ Rather than describing every set of options for every combination, we will go ov
 
 As of currently, deleted runs are recoverable, however you need to contact your local adminstrator or someone at 'biocore@umassmed.edu' in order to obtain them.
 
+Adv Status Page
+===============
+

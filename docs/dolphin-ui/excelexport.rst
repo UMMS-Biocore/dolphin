@@ -25,7 +25,9 @@ It is important to not that you cannot export Imports/Samples from different Exp
 
 Likewise, if no data is selected and the Export button is pressed, an error will occur and the user will receive a warning message that the action is not allowed.
 
-The file saved will be in the format of: *user* _ *year* _ *month* _ *day* _ *hour* _ *minute* _ *seconds* . xlsx
+The file saved will be in the format of: *user* _ *year* _ *month* _ *day* _ *hour* _ *minute* _ *seconds* . xls
+
+Upon downloading the excel export, if you wish to resubmit the files using excel import, make sure you list a processed directory within the spreadsheet.
 
 
 For more information on the NGS Browser, see the NGS Browser guide.

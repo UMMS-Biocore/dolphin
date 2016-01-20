@@ -45,7 +45,7 @@ The blue rewind button at the top right of the Browse section will bring the use
 
 This section of the browser is located right under the Browse category section.  As the user selects more Imports/Samples, this box will fill up with the selected samples.
 
-As the box fills with samples, users can click the red 'X' next to a specific sample to unselect that sample.  In addition, as samples are selected the 'Clear Basket' button will become active and by clicking this button will remove all of the selected samples.
+As the box fills with samples, users can click the red 'X' next to a specific sample to unselect that sample.  In addition, as samples are selected the 'Clear' button will become active and by clicking this button will remove all of the selected samples.
 
 **Data Tables:**
 
@@ -66,7 +66,7 @@ As you move down the table, you can then select how many entries per page you wa
 
 Next is the actual contents of the table itself followed by page navigation buttons.  If you have the proper permissions, you may edit the contents of the table by clicking on the specific cell within the table.  Some fields contain standard text boxes while others will have a searchable dropdown box for you to select previous submissions for that columns category.
 
-For the Imports/Samples tables, selection checkboxes are located on the right side of each table row.  A disabled checkbox indicates that the Import/Sample is still currently in the initial processing phase and cannot be selected to manipulate.  A helpful '!' button is also placed near these checkboxes to indicate that the Import/Sample is not currently ready.
+For the each of the tables, selection checkboxes are located on the right side of each table row.  A helpful '!' button is also placed near these checkboxes to indicate that the Import/Sample is not currently ready for use due to the processing step.
 
 **Selection Details:**
 
@@ -77,6 +77,8 @@ Within each table, each entry contains a name which is a clickable link.  By cli
 
 By clicking on a specific Experiment Series, detailed information about that experiment series will be displayed as well as the Imports/Samples being displayed in the other tables will be from that specific Experiment Series.  The same applies if a user selects an Import or a Sample name.
 
+In the sample detailed information, as long as you have permissions to do so, you can edit the file names and directory paths.  Please be warned that editting these file names and directory paths must accurately match the actual file names and paths.
+
 At the top right of each Selection Details tab will be a grey arrow button.  This will return the user back to the table portion of the NGS Browser.
 
 **Option Buttons:**
@@ -86,13 +88,17 @@ At the top right of each Selection Details tab will be a grey arrow button.  Thi
 
 At the bottom of the page there are a series of buttons that the user can click to perform specific tasks.
 
-* **Send to Pipeline:** Imports/Samples selected will then be sent to the NGS Pipeline page for further option selection and processing.
+* **Send to Pipeline:** Experiment Series/Imports/Samples selected will then be sent to the NGS Pipeline page for further option selection and processing.
 * **Pipeline Status:** This button takes the user to the NGS Status page where they can view their current/previous runs.
-* **Export to Excel:** This button will take the selected Imports/Samples and save them to an excel spreadsheet for the users convience (See Excel Export Guide)
-* **Send to NCBI:** *DISABLED*  Under Construction
-* **Send to ENCODE:** *DISABLED* Under Construction
-* **Delete Selected:** This button will delete the selected Imports/Samples.
 
-Note that users need the proper permissions to delete a selected Import/Sample.  A message will be displayed upon selecting the Delete Selected button showing the Imports/Samples that the user has permissions to delete as well as a confirmation text to confirm the deletion.
+* **Export to Excel:** This button will take the selected Imports/Samples and save them to an excel spreadsheet for the users convience (See Excel Export Guide)
+* **Send to ENCODE:** *DISABLED* Under Construction
+
+* **Change Experiment Group:** If you're the owner of an experiment series, you can change which group it belongs to as long as you belong to that group.
+* **Change Experiment Owner:** If you're the owner of an experiment series, you can transfer ownership to another user within the same group.
+
+* **Delete Selected:** This button will delete the selected Experiment Series/Imports/Samples.
+
+Note that users need the proper permissions to delete a selected Experiment Series/Import/Sample.  A message will be displayed upon selecting the Delete Selected button showing the Experiment Series/Imports/Samples that the user has permissions to delete as well as a confirmation text to confirm the deletion.
 
 Before deleting Imports/Samples, please inform your fellow researchers for deleting this information is not recoverable.  If you wish to delete Imports/Samples that you do not have permission to delete, contact either the owner of the Import/Sample, your local administrator, or someone at biocore@umassmed.edu.
