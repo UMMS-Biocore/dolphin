@@ -16,7 +16,7 @@ Once logged in, click on the 'NGS Tracking' tab on the left, then click on 'NGS 
 	
 Once you have selected the samples/imports you wish to analyze, hit the 'Send to Pipeline' at the bottom of the screen to begin.
 
-Alternatively, if you're rerunning a run with different parameters, you will be taken to the NGS Pipeline page.
+Alternatively, if you're rerunning a run with different parameters from the status page, you will be taken to the NGS Pipeline page.
 
 NGS Pipeline Parameters
 =======================
@@ -59,9 +59,33 @@ This determines where the specific output of the current run should be deposited
 
 If you're not entirely sure as where to deposit your data, you can contact your local administrator.
 
+User permissions are required within the cluster for the path that you select.  An error will show if you do not have proper permissions to add to/create this directory.
+
 **FastQC:**
 
 Select whether or not you want a FastQC report.
+
+**Permissions:**
+
+Select who will be able to view this run.
+
+Options include:
+
+* only me
+* only my group
+* everyone
+
+**Group Selection:**
+
+Select which group to submit this run under.
+
+A list of all the groups you belong to will be provided.
+
+**Submission:**
+
+This will determine whether or not to prepare the run for submission to either ENCODE of GEO.
+
+For now, this feature has been disabled.
 
 Optional Parameters
 ===================
@@ -78,13 +102,11 @@ By clicking on the plus sign, you expand the tab and have aditional parameter op
 	
 The expandable tabs include:
 
-**Adapter Removal:**
+**Split FastQ:**
 
-If your samples require adapter removal, you can expand the Adapter Removal tab and select the yes button.
+If you would like the to split the resulting fastq files, you can expand the Split FastQ and select the yes button.
 
-Once you've selected yes, you can then add your specific adapters within the adapter text box.
-
-There should be one adapter per line within the text box.
+Once yes is selected, you then can select the size of the fastq file based on the number of reads per file.
 
 **Quality Filtering:**
 
@@ -98,11 +120,13 @@ After you've selected yes, you then can adjust the following quality filtering p
 * trailing
 * minlen
 
-**Split FastQ:**
+**Adapter Removal:**
 
-If you would like the to split the resulting fastq files, you can expand the Split FastQ and select the yes button.
+If your samples require adapter removal, you can expand the Adapter Removal tab and select the yes button.
 
-Once yes is selected, you then can select the size of the fastq file based on the number of reads per file.
+Once you've selected yes, you can then add your specific adapters within the adapter text box.
+
+There should be one adapter per line within the text box.
 
 **Trimming:**
 
@@ -112,7 +136,7 @@ Next, select whether or not the reads are paired-end or single-end.
 
 After you've selected your read type, then enter the 5' length to trim and the 3' length to trim.
 
-If paired-end reads are selected, additionally you need will need to supply the 5' and the 3' length of the second read too be trimmed.
+If paired-end reads are selected, additionally you need will need to supply the 5' and the 3' length of the pair too be trimmed.
 
 **Custom Sequence Set:**
 
@@ -120,13 +144,11 @@ If you would like to add custom sequence sets, expand the Custom Sequence Set an
 
 For these custom sequence sets, you will have to supply:
 
-* The custom sequence index file
-* Name of the index
+* The custom sequence index directory (full path)
+* Prefix of the index file (Example: for index.fasta you would supply 'index')
 * Bowtie parameters
 * Description of the index
-* Whether to filter out the results
-
-The full path of the index file is required for custom sequence sets.
+* Whether to filter out the reads mapped to this custom index
 
 You can add multiple custom sequence sets if desired.
 
@@ -134,7 +156,7 @@ You can add multiple custom sequence sets if desired.
 
 If you would like to map your reads sequentially to common RNAs, Expand the Common RNAs tab and select the yes for the RNAs you would like to map.
 
-Bowtie2 map your reads sequentially to common RNAs below. To change the default parameters, click the `Change Parameters` button and then insert your parameters.
+Bowtie2 maps your reads sequentially to common RNAs below and then filters the reads mapped out. To change the default parameters, click the `Change Parameters` button and then insert your parameters.
 
 Additional Pipelines
 ====================
@@ -142,6 +164,8 @@ Additional Pipelines
 If you would like to add additional features to your current run, you can expand the Additional Pipelines tab and hit the 'Add Pipeline' button.
 
 You can add more than one selection of additional pipelines by clicking the 'Add Pipeline' button again.  You can also remove your current pipeline selection by clicking the 'Remove Pipeline' button.
+
+The pipelines added will be carried out from top to bottom.
 
 A new box will appear with a dropdown menu that includes:
 
@@ -188,6 +212,26 @@ Once you've selected your conditions, you then can determine your Fit Type, and 
 Based on your previous selection from the Common RNAs tab, you can also select which given sequences you want to analyze.
 
 Note that you can select DESeq multiple times, incase you want to run multiple pairwise comparisons on a single run.
+
+**BisulphiteMapping:**
+
+If you would like to carry out Bisulphite mapping, then the BisulphiteMapping additional pipeline should be selected.
+
+Bisulphite Mapping is a bisulphite sequencing mapping program that indexes only digestion sites.
+
+In addition to running the BSMap program with it's additional parameters, the user can also run MCall with additional parameters to report statistics such as varius bias, confidence intervals, and methylation ratios.
+
+**DiffMeth:**
+
+If you would like to carry out Differential Methylation, then the DiffMeth additional pipeline should be selected.
+
+Differential Methylation lets you compare the Bisulphite Mapping results of samples against other samples within your run.
+
+Using the selection boxes labeled 'Condition 1' and 'Condition 2' you can select which samples you wish to check against.
+
+In order to carry out DiffMeth, the user first has to select the BisulphiteMapping pipeline as it is required to carry out this step.
+
+You may select DiffMeth multiple times, incase you want to run multiple pairwise comparisons on a single run.
 
 Submission
 ==========

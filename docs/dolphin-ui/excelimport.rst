@@ -14,7 +14,7 @@ Once logged in, click on the 'NGS Tracking' tab on the left, then click on 'Exce
 .. image:: dolphin_pics/menu_bar.png
 	:align: center
 
-From here, under the 'Excel file input' button, there is a link to download an example excel input.  Download the example file and you'll be ready to start adding your data.
+From here, under the 'Excel file input' button, there is a link to download an example excel input.  Download the example spreadsheet and you'll be ready to start adding your data.
 
 You can also download the example spreadsheet here: 
 	
@@ -33,6 +33,8 @@ The spreadsheet contains multiple tabs that will help you organize your informat
 
 .. image:: dolphin_pics/excel_tabs.png
 	:align: center
+	
+If using the single input directory spreadsheet, there will not be a 'DIRS' tab within the spreadsheet.
 
 **META-DATA:**
 
@@ -52,14 +54,20 @@ This tab will ask for information on:
 
 * *contributor:* First name, Initial, Last name.  You may add additional contributors by creating more 'contributor' cells in the A column with the actual contributors in the B column.
 
-* *processed directory:* Full path for the output directory
+* *processed directory:* Full path for the processed output directory.  This path is where you want to keep all of the data generated.
 
 * *amazon bucket:* Optional amazon bucket link
 
 This is the only tab that will ask for information in a single column (column B).  The rest of the tabs will ask for information in rows.
 
+Additionally, if using the single input directory spreadsheet, the Metadata tab will include:
+
+* *input directory:* Full path for the input directory.  This path contains the fastq files you want to process.
+
 Note that to add additional Imports/Samples to an already exsisting Experiment Series, the information about the experiment must be identical to that you are adding to.
-Processed director, and amazon bucket does not have to be identical for each submission.
+Processed directory, and amazon bucket does not have to be identical for each submission.
+
+Please note that every field except contributor and amazon bucket are required fields
 
 **IMPORTS:**
 
@@ -191,7 +199,7 @@ Please note that Sample name must be present and the Import name and Protocol na
 
 **DIRS:**
 
-Short for directories, this tab indicated all the of directories in which your fastq data are stored.
+Short for directories, this tab indicated all the of directories in which your fastq data are stored.  If using the single input directory spreadsheet, this tab will not be present.
 
 There can be multiple entries on this tab.
 
@@ -214,6 +222,8 @@ File information includes:
 * *Directory ID:* A specified ID to associate to directories within the dirs tab.
 
 * *file name(comma separated for paired ends):* The file fastq file name.  If paired end, list both files seperated by a comma.
+
+Please note that these fields are all required, and that if using the single directory input spreadsheet the directory id will not be present.
 
 Preparing for Submission of Your Excel Spreadsheet
 ==================================================

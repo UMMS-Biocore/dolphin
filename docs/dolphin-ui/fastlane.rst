@@ -114,9 +114,9 @@ It's important to note that samples are to be separated by a new line.  An examp
 
 Examples listed within the website will change based on whether or not barcode separation is selected.  Bot Paired-end and single land examples are provided within the grey.
 
-**Backup Directory:**
+**Processed Directory:**
 
-This section will list the exact location of where the backup results/information will be stored.
+This section will list the exact location of where the backup/results information will be stored.
 
 The full path of the directory must be given.
 
