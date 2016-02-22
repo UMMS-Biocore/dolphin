@@ -1,6 +1,6 @@
-***************************
-DEBrowser Quick-start Guide
-***************************
+*****************
+Quick-start Guide
+*****************
 
 This guide is a quick walkthrough for the DESeq Browser from start to finish.
 
@@ -43,7 +43,7 @@ You can hover over the scatterplot points to display more information about the 
 .. image:: debrowser_pics/bargraph.png
 	:align: center
 	
-.. image:: debrowser_pics/bar_plot.png
+.. image:: debrowser_pics/barplot.png
 	:align: center
 	
 You can also select a specific region within the scatter plot and zoom in on the selected window.
@@ -63,7 +63,7 @@ You also have a wide array of options when it comes to fold change cut-off level
 
 If you can select the type of plot at the bottom of the filter tab.
 
-.. image:: debrowser_pics/main_plot.png
+.. image:: debrowser_pics/main_plots.png
 	:align: center
 	
 The default is a Scatter plot, but you can also choose from a Volcano plot and a MA plot.

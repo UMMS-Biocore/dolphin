@@ -60,3 +60,5 @@ You should also consult with your lab on data storage, access rights, and any ot
 
 
 Once you have access to Dolphin and have determined whether or not you have enough space, You'll be ready to import your data to our database and begin analyzation!
+
+For more information about importing your data, see the Excel Import Guide.
