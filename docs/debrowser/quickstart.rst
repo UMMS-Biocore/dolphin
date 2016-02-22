@@ -18,6 +18,8 @@ Once you've made your way to the website, you will be greeted with this tab on t
 	
 To begin the DESeq process, you will need to select your Data file (CSV format) to be analyzed using DESeq.
 
+If you do not have a dataset to use, you can use this `demo set <http://bioinfo.umassmed.edu/content/workshops/material/data.tsv>`
+
 This selection is under the 'Choose CSV File'.
 
 Once you've selected your file and the upload has completed, you will then be able to select your conditions in which you wish to compare using DESeq.
@@ -119,6 +121,16 @@ The data generated is also sorted based on the following datasets:
 
 .. image:: debrowser_pics/datatable.png
 	:align: center
+	
+The tables contain the following information:
+
+* ID - The specific gene ID
+* Sample Names - The names of the samples given and they're corresponding tmm normalized counts
+* Conditions - The log averaged values
+* padj - padjusted value
+* log2FoldChange - The Log2 fold change
+* foldChange - The fold change
+* log10padj - The log 10 padjusted value
 
 GO Term Tab
 ===========
