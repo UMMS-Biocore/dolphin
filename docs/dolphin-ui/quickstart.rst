@@ -2,32 +2,61 @@
 Dolphin Quick-start Guide
 *************************
 
-This guide is a quick walkthrough for dolphin from start to finish.
+This guide is a quick walkthrough for setting up a Dolphin account
 
 Accessing Dolphin
 =================
 
-First, make sure to have an instance of dolphin available (see Dolphin Docker) as well as an account for the dolphin interface.
+So you want to start using the Dolphin Web tool, but you don't have an account.
 
-You can find the origin Dolphin website at 'http://dolphin.umassmed.edu/'
+Let's go over the steps needed to be taken in order to access the Dolphin Web Service at UMass.
 
-Getting Started
-===============
+**HPCC Access**
 
-Once you've logged into Dolphin, you're going to want to start analyzing data/running pipelines!  In order to do that, there are a couple steps you need to take first.
+In order to use the Dolphin Web Service at UMass, you're going to need access to our High Performance Computing Cluster.
+
+Registration for the cluster can be found at this address 'https://www.umassrc.org/hpc/'
+
+Once the HPCC Admins group receives your registration form, they will send an email to your PI requesting the PI’s permission to give you access.
+
+After it’s approved you will receive an email from the HPCC Admins group with your HPCC account user name.
+
+**Joining the Galaxy Group**
+
+Once you have your Cluster account, you're going to want to email the 'helpdesk@umassmed.edu' to join the galaxy group.
+
+Make sure to CC 'hpcc-support@umassmed.edu'
+
+**Log Into Galaxy**
+
+In order to make sure you have access to our tools and pipelines, you're going to want to log into 'galaxy.umassmed.edu' to see if you have permissions.
+
+If you are able to log in, then you should be all set.
+
+**Galaxy Keys**
+
+In order for Dolphin to act on your behalf and use the pipeline tools we have available for you, you're going to need to run a script to give us permissions.
+
+First, log into the cluster terminal using:
+
+*<your_user>@ghpcc06.umassrc.org*
+
+Where <your_user> is your username given to you by the cluster.
+
+Once you're logged in, all you have to do is run this script:
+
+/project/umw_biocore/bin/addKey.bash
+
+This is a one time script that you'll need to run in order to have access to the Dolphin Web Service.
+
+After using this script, it might take a few hours for our system to update before you can log into the Dolphin Web Service.  If a day goes by and you're still not able to access the Dolphin Web Service, please contact us at 'biocore@umassmed.edu'
+
+**Project Space requirements**
+
+Once you have access to Dolphin, you're going to need some space in order to store your data/results.  Make sure you coordinate with HPCC for how much project space you have or require.
+
+You should also consult with your lab on data storage, access rights, and any other additional file information you may need.
 
 
 
-Importing Data
-==============
-
-
-
-Running a Pipeline
-==================
-
-
-
-Obtaining Results
-=================
-
+Once you have access to Dolphin and have determined whether or not you have enough space, You'll be ready to import your data to our database and begin analyzation!

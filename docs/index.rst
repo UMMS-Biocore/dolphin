@@ -14,6 +14,7 @@ Contents:
    dolphin-docker/Dolphin-Docker.rst
    dolphin-tools/Dolphin-Tools.rst
    dolphin-ui/Dolphin-UI.rst
+   debrowser/DEBrowser.rst
 
 
 
