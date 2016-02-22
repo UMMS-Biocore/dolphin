@@ -1,5 +1,5 @@
-Welcome to DESeq Browser's Documentation
-===================================
+DEBrowser
+=========
 
 Contents:
 
