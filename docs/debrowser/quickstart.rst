@@ -9,7 +9,7 @@ Getting Started
 
 First off, we need to head to the DEBrowser webpage at this url:
 
-http://labkey.umassmed.edu/debrowserv2.0/
+http://labkey.umassmed.edu/debrowserv2.1/
 
 Once you've made your way to the website, you will be greeted with this tab on the left:
 
