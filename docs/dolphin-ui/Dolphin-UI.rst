@@ -21,3 +21,4 @@ Contents:
    ngsreports
    ngsplots
    tablecreator
+   profile
