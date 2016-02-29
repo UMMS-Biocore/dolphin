@@ -1,5 +1,5 @@
 ***************
-DEBrowser/DESeq
+DESeq/DEBrowser
 ***************
 
 This guide contains a breif discription of DESeq2 used within the DEBrowser

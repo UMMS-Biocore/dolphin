@@ -11,6 +11,12 @@ First off, we need to head to the DEBrowser webpage at this url:
 
 http://debrowser.umassmed.edu/
 
+Alternatively, if you have the R package installed, you can call these R commands:
+
+library(debrowser)
+library(shiny)
+runApp()
+
 Once you've made your way to the website, you will be greeted with this tab on the left:
 
 .. image:: debrowser_pics/input_tab.png
