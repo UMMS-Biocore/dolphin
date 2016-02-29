@@ -11,6 +11,12 @@ First off, we need to head to the DEBrowser webpage at this url:
 
 http://debrowser.umassmed.edu/
 
+Alternatively, if you have the R package installed, you can call these R commands:
+
+library(debrowser)
+library(shiny)
+runApp()
+
 Once you've made your way to the website, you will be greeted with this tab on the left:
 
 .. image:: debrowser_pics/input_tab.png
@@ -22,7 +28,9 @@ If you do not have a dataset to use, you can use this `demo set <http://bioinfo.
 
 This selection is under the 'Choose CSV File'.
 
-Once you've selected your file and the upload has completed, you will then be able to select your conditions in which you wish to compare using DESeq.
+Once you've selected your file and the upload has completed, you will then be able to select your conditions
+
+in which you wish to compare using DESeq.
 
 .. image:: debrowser_pics/file_load.png
 	:align: center
@@ -35,12 +43,16 @@ Once you've selected your conditions, you can then hit 'Run DESeq!' to begin.
 Analyzing The Results
 =====================
 
-Once DESeq has finished and the results have been uploaded into DEBrowser, the initial scatterplot of the results will be uploaded.
+Once DESeq has finished and the results have been uploaded into DEBrowser, the initial scatterplot of
+
+the results will be uploaded.
 
 .. image:: debrowser_pics/scatter_plot.png
 	:align: center
 	
-You can hover over the scatterplot points to display more information about the point selected.  A few bargraphs will be generated for the user to view as soon as a scatterplot point is hovered over.
+You can hover over the scatterplot points to display more information about the point selected.
+
+A few bargraphs will be generated for the user to view as soon as a scatterplot point is hovered over.
 
 .. image:: debrowser_pics/bargraph.png
 	:align: center
@@ -58,7 +70,9 @@ Once you've selected a specific region, a new scatterplot of the selected area w
 .. image:: debrowser_pics/scatter_plot_zoom.png
 	:align: center
 	
-You also have a wide array of options when it comes to fold change cut-off levels, padj cut-off values, and up/down regulated genes.
+You also have a wide array of options when it comes to fold change cut-off levels, padj cut-off values,
+
+and up/down regulated genes.
 
 .. image:: debrowser_pics/filters.png
 	:align: center
@@ -88,14 +102,18 @@ After DESeq has run, and you've had some time to play with the initial plots gen
 	
 These tabs display additional plots or tables based on your current padj/fold-change cut-off values.
 
-By selecting additional plots, you will be shown additional plots based on the 'Additional Plots' selection on the left tab.  Additional plots will start off on the All2All plot.
+By selecting additional plots, you will be shown additional plots based on the 'Additional Plots' selection on the left tab.
 
-To determine which additional plot you will be viewing, you can select the 'Add.' tab within the filters box to change the types.
+Additional plots will start off on the All2All plot.  To determine which additional plot you will be viewing, you
+
+can select the 'Add.' tab within the filters box to change the types.
 
 .. image:: debrowser_pics/add_plots_opts.png
 	:align: center
 
-The first selection, 'All2All', displays an all-to-all plot of your conditions slected.  As you change the padj and fold-change cutt-off values, the data in these plots will also change!
+The first selection, 'All2All', displays an all-to-all plot of your conditions slected.  As you change the padj and
+
+fold-change cutt-off values, the data in these plots will also change!
 
 .. image:: debrowser_pics/all2all.png
 	:align: center
@@ -135,7 +153,9 @@ The tables contain the following information:
 GO Term Tab
 ===========
 
-The final tab gives the user access to specific GO plots.  Make sure that if you're interested in the GO plots, to switch the tab within the filter box to 'GO'
+The final tab gives the user access to specific GO plots.  Make sure that if you're interested in the GO plots,
+
+to switch the tab within the filter box to 'GO'
 
 .. image:: debrowser_pics/go_plots_opts.png
 	:align: center
@@ -158,7 +178,9 @@ The types of plots you will be able to generate include:
 * GOdotplot - dot plot
 * enrichMap - *currently under construction*
 
-Once you have adjusted all of your parameters, you may hit the submit button in the top right and then wait for the results to show on screen!
+Once you have adjusted all of your parameters, you may hit the submit button in the top right and then wait
+
+for the results to show on screen!
 
 Example Summary plot:
 
