@@ -9,37 +9,21 @@ Introduction
 ============
 
 Differential gene expression analysis has become an increasingly popular tool
-
 in determining and viewing up and/or down experssed genes between two sets of
-
 samples.  The goal of Differential gene expression analysis is to find genes
-
 or transcripts whose difference in expression, when accounting for the
-
 variance within condition, is higher than expected by chance.  `DESeq2
-
 <https://bioconductor.org/packages/release/bioc/html/DESeq2.html>`_ is an R
-
 package available via Bioconductor and is designed to normalize count data
-
 from high-throughput sequencing assays such as RNA-Seq and test for
-
 differential expression (Love et al. 2014).  For more information on the
-
 DESeq2 algorithm, you can visit `this website <https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.pdf>`_  With multiple parameters such as
-
 padjust values, log fold changes, and plot styles, altering plots
-
 created with your DE data can be a hassle as well as time consuming.  The
-
 Differential Expression Browser uses DESeq2 coupled with shiny to produce
-
 real-time changes within your plot queries and allows for interactive browsing
-
 of your DESeq results. In addition to DESeq analyzation, DEBrowser also offers
-
 a variety of other analyzation plots and tools to help visualize your data
-
 even further.
 
 
@@ -52,15 +36,20 @@ To obtain these quantifications, we typically use `RSEM <http://deweylab.github.
 
 The TSV files used to describe the quantification counts are similar to this:
 
+
 gene	transcript	exper_rep1	exper_rep2	exper_rep3	control_rep1	control_rep2	control_rep3
+
 DQ714826	uc007tfl.1	0.00	0.00	0.00	0.00	0.00	0.00
+
 DQ551521	uc008bml.1	0.00	0.00	0.00	0.00	0.00	0.00
+
 AK028549	uc011wpi.1	2.00	1.29	0.00	0.00	0.00	1.40
+
 
 Where the gene column represent the gene name, the transcript column represents the transcript(s) name (comma separated for multiple), and the rest of the columns are the counts for your samples.
 
 DESeq2 Workflow
-==============
+===============
 
 DESeq2 performs multiple steps in order to analyze the data you've provided for it.
 
