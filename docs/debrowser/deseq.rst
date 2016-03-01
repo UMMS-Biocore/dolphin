@@ -22,8 +22,8 @@ padjust values, log fold changes, and plot styles, altering plots
 created with your DE data can be a hassle as well as time consuming.  The
 Differential Expression Browser uses DESeq2 coupled with shiny to produce
 real-time changes within your plot queries and allows for interactive browsing
-of your DESeq results. In addition to DESeq analyzation, DEBrowser also offers
-a variety of other analyzation plots and tools to help visualize your data
+of your DESeq results. In addition to DESeq analysis, DEBrowser also offers
+a variety of other plots and analysis tools to help visualize your data
 even further.
 
 
