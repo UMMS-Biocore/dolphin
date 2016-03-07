@@ -15,9 +15,49 @@ openssl-devel, libxml2-devel, libcurl-devel, libpng-devel)
 
 **Installation instructions from source:**
 
-1. Install the dependencias by running source command on attached bioC_install.R script in R or RStudio. 
+1. Install the required dependencias by running the following commands in R or RStudio. 
 
-        source("./bioC_install.R")
+        ### Packages for R.
+
+		install.packages("ggvis")
+
+		install.packages("ggplot2")
+
+		install.packages("RColorBrewer")
+
+		install.packages("DT")
+
+		install.packages("gplots")
+
+		install.packages("devtools")
+
+		### install github
+
+
+		### BioC Packages for R.
+		
+		source("http://www.bioconductor.org/biocLite.R")
+
+		biocLite()
+
+		biocLite("clusterProfiler")
+
+		biocLite("ReactomePA")
+
+		biocLite("shiny")
+
+		biocLite("DESeq2")
+
+		biocLite("annotate")
+
+		biocLite("AnnotationDbi")
+
+		biocLite("org.Hs.eg.db")
+
+		biocLite("DOSE")
+
+		biocLite("edgeR")
+
 
 2. Install debrowser using the command below
 
