@@ -31,8 +31,6 @@ openssl-devel, libxml2-devel, libcurl-devel, libpng-devel)
 
 		install.packages("devtools")
 
-		### install github
-
 
 		### BioC Packages for R.
 		
