@@ -32,7 +32,7 @@ openssl-devel, libxml2-devel, libcurl-devel, libpng-devel)
 		install.packages("devtools")
 
 
-		### BioC Packages for R.
+	### BioC Packages for R.
 		
 		source("http://www.bioconductor.org/biocLite.R")
 
