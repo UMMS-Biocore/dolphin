@@ -123,10 +123,14 @@ The second additional plot is the heatmap generated based on your dataset.
 .. image:: debrowser_pics/heatmap.png
 	:align: center
 
+You can also choose the appropriate clustering and distance method you would like to use for this heatmap just abot the plot.
+
 The third plot, the PCA plot (Principal Component Analysis)
 
 .. image:: debrowser_pics/pca.png
 	:align: center
+
+Each additional plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
 
 In addition to these exciting additional plots, you also have access to the data generated within table form.
 
