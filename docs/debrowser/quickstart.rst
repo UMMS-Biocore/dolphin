@@ -136,7 +136,7 @@ The third plot, the PCA plot (Principal Component Analysis)
 
 Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
 
-In qc to these exciting qc plots, you also have access to the data generated within table form.
+In addition to these exciting qc plots, you also have access to the data generated within table form.
 
 The data generated is also sorted based on the following datasets:
 
