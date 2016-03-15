@@ -92,7 +92,7 @@ The default is a Scatter plot, but you can also choose from a Volcano plot and a
 
 You can download the results in CSV or TSV format by selecting your 'File type' and clicking the 'download' button once you've ran DESeq.
 
-Additional Plots/Tables
+Quality Control Plots/Tables
 =======================
 
 After DESeq has run, and you've had some time to play with the initial plots generated, You may notice the additional tabs above the plots.
@@ -100,11 +100,11 @@ After DESeq has run, and you've had some time to play with the initial plots gen
 .. image:: debrowser_pics/info_tabs.png
 	:align: center
 	
-These tabs display additional plots or tables based on your current padj/fold-change cut-off values.
+These tabs display qc plots or tables based on your current padj/fold-change cut-off values.
 
-By selecting additional plots, you will be shown additional plots based on the 'Additional Plots' selection on the left tab.
+By selecting qc plots, you will be shown qc plots based on the 'QC Plots' selection on the left tab.
 
-Additional plots will start off on the All2All plot.  To determine which additional plot you will be viewing, you
+QC plots will start off on the All2All plot.  To determine which qc plot you will be viewing, you
 
 can select the 'Add.' tab within the filters box to change the types.
 
@@ -118,21 +118,25 @@ fold-change cutt-off values, the data in these plots will also change!
 .. image:: debrowser_pics/all2all.png
 	:align: center
 	
-The second additional plot is the heatmap generated based on your dataset.
+The second qc plot is the heatmap generated based on your dataset.
 
 .. image:: debrowser_pics/heatmap.png
 	:align: center
 
 You can also choose the appropriate clustering and distance method you would like to use for this heatmap just abot the plot.
 
+For additional information about the clustering methods used, you can consult `this <http://www.inside-r.org/r-doc/stats/hclust>`_ website.
+
+For additional information about the distance methods used, you can consult `this <http://www.inside-r.org/r-doc/stats/dist>`_ website.  For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
+
 The third plot, the PCA plot (Principal Component Analysis)
 
 .. image:: debrowser_pics/pca.png
 	:align: center
 
-Each additional plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
+Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
 
-In addition to these exciting additional plots, you also have access to the data generated within table form.
+In addition to these exciting qc plots, you also have access to the data generated within table form.
 
 The data generated is also sorted based on the following datasets:
 
