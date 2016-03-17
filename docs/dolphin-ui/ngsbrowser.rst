@@ -77,6 +77,26 @@ Within each table, each entry contains a name which is a clickable link.  By cli
 
 By clicking on a specific Experiment Series, detailed information about that experiment series will be displayed as well as the Imports/Samples being displayed in the other tables will be from that specific Experiment Series.  The same applies if a user selects an Import or a Sample name.
 
+Clicking on a sample for details will produce a table with 4 different tabs.  The first tab, named after the samples name, will display all of the information stored about the sample to the user.
+
+.. image:: dolphin_pics/details_tab1.png
+	:align: center
+	
+The second tab labeled as 'Directory Info' will display all of the directory information related to the sample.
+
+.. image:: dolphin_pics/details_tab2.png
+	:align: center
+
+The third tab labeled as 'Runs' will display all of the links to each run report in which the sample has been used that you have permissions to access (For more information on reports see the NGS Reports Guide).
+
+.. image:: dolphin_pics/details_tab3.png
+	:align: center
+
+The last tab labeled as 'Tables' will display all of the links to custom tables in which the sample has been used that you have permissions to access (For more information on generated tables see the Table Creator Guide).
+
+.. image:: dolphin_pics/details_tab4.png
+	:align: center
+
 In the sample detailed information, as long as you have permissions to do so, you can edit the file names and directory paths.  Please be warned that editting these file names and directory paths must accurately match the actual file names and paths.
 
 At the top right of each Selection Details tab will be a grey arrow button.  This will return the user back to the table portion of the NGS Browser.
@@ -92,6 +112,7 @@ At the bottom of the page there are a series of buttons that the user can click 
 * **Pipeline Status:** This button takes the user to the NGS Status page where they can view their current/previous runs.
 
 * **Export to Excel:** This button will take the selected Imports/Samples and save them to an excel spreadsheet for the users convience (See Excel Export Guide)
+* **Export Geo Spreadsheet:** This button takes your selected samples information and fills out an excel spreadsheet for geo submission (some additional information may be required).
 * **Send to ENCODE:** *DISABLED* Under Construction
 
 * **Change Experiment Group:** If you're the owner of an experiment series, you can change which group it belongs to as long as you belong to that group.
