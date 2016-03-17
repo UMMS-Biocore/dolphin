@@ -219,7 +219,7 @@ If you would like to carry out Bisulphite mapping, then the BisulphiteMapping ad
 
 Bisulphite Mapping is a bisulphite sequencing mapping program that indexes only digestion sites.
 
-In addition to running the BSMap program with it's additional parameters, the user can also run MCall with additional parameters to report statistics such as varius bias, confidence intervals, and methylation ratios.
+In addition to running the BSMap program with it's additional parameters, the user can also run MCall with additional parameters to report statistics such as various bias, confidence intervals, and methylation ratios.
 
 **DiffMeth:**
 
@@ -232,6 +232,10 @@ Using the selection boxes labeled 'Condition 1' and 'Condition 2' you can select
 In order to carry out DiffMeth, the user first has to select the BisulphiteMapping pipeline as it is required to carry out this step.
 
 You may select DiffMeth multiple times, incase you want to run multiple pairwise comparisons on a single run.
+
+**HaplotypeCaller:**
+
+
 
 Submission
 ==========
