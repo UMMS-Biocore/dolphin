@@ -48,6 +48,7 @@ Once the table is populated, an options button labeled 'Select Data Options' wil
 Options include:
 
 * **TYPE Links**:  These links will direct the user towards another webpage with the data from the table in the specified TYPE format.
+* **Send to DEBrowser:** This link will only appear under rsem/mRNA/tRNA results.  It will send the user to the DEBrowser with the selected table as the dataset (For more information on DEBrowser, see the DEBrowser section).
 * **Download File**:  This link will download the table to a file in a TSV format.
 * **Clear Selection**:  If the user desires, they can clear the table of it's contents.
 

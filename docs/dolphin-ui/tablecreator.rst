@@ -55,7 +55,7 @@ In the 'Table Generated' page, you will have the reports of the runs selected me
 .. image:: dolphin_pics/table_generated.png
         :align: center
 
-For external use, you can maximize the 'Export Table' tab to export the table to a variety of formats:
+For external use, you can select the 'Download Type' button to export the table to a variety of formats:
 
 	* JSON
 	* JSON2
@@ -65,7 +65,7 @@ For external use, you can maximize the 'Export Table' tab to export the table to
 .. image:: dolphin_pics/export_table.png
         :align: center
 
-You can also download the raw TSV file of the newly generated table.
+You can also download the raw TSV file of the newly generated table or send the table to the DEBrowser (For more information on DEBrowser, see the DEBrowser section). This will only appear for rsem/mRNA/tRNA tables.
 
 If you wish to save the table, either for easy access later or for plotting capabilities, you can name the table in the 'Save Table As"' tab and then click the 'Save Table' at the bottom of the page.
 
@@ -75,6 +75,8 @@ Within the 'NGS Table List' the user can view all of their merged tables they ha
 
 	* View
 	* Plot Table
+	* Change Permissions
+	* Send to DEBrowser
 	* Delete
 
 .. image:: dolphin_pics/tables_generated_options.png
@@ -83,5 +85,9 @@ Within the 'NGS Table List' the user can view all of their merged tables they ha
 Selecting 'View' will take you to the 'Table Generated' page with the report where you can save the table under a new name if you wish.
 
 Selecting the 'Plot Table' will direct you to the 'Plots' page with your generated table selected as the input.  You can also visit the 'Plots' page at any time and select any of your generated tables to use for input.
+
+Change Permissions will appear if you are the owner of the generated table.  You will be able to change the permissions given to this table by selection this option.
+
+Selecting 'Send to DEBrowser' will allow you to send your table information straight to the DEBrowser (For more information on DEBrowser, see the DEBrowser section).  This will only appear for rsem/mRNA/tRNA tables.
 
 Selecting 'Delete' will remove the generated table from your list of tables.
