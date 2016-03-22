@@ -17,7 +17,7 @@ Once logged in, click on the 'NGS Tracking' tab on the left, then click on 'DEBr
 This will bring you to the DEBrowser section within dolphin.  This will take you to the base DEBrowser page where you can either try the demo
 by clicking the 'Load Demo!' to load the demo set we have set up or you can load in locally downloaded tsv files for analysis.
 
-.. image:: dolphin_pics/menu_bar.png
+.. image:: dolphin_pics/input_tab.png
 	:align: center
 
 You can also load in RSEM results from runs with the corresponding results in a few easy steps.
@@ -58,4 +58,6 @@ You can also send a table into DEBrowser while viewing the generated table.  Jus
 
 Please be patient while the data loads into the Browser for it can take a few seconds before the data is fully loaded and you can run DESeq.
 
-For a more detailed guide on DEBrowser itself, please visit the `DEBrowser section.<dolphin.readthedocs.com>`_
+For a more detailed guide on DEBrowser itself, please visit the `DEBrowser section`_.
+
+.. _DEBrowser section: dolphin.readthedocs.com
