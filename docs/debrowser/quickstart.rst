@@ -15,9 +15,7 @@ Alternatively, if you have the R package installed, you can call these R command
 
 library(debrowser)
 
-library(shiny)
-
-runApp()
+startDEBrowser()
 
 Once you've made your way to the website, you will be greeted with this tab on the left:
 
