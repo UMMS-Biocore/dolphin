@@ -13,6 +13,8 @@ First, you will have to install R and/or RStudio.
 (On Fedora/Red Hat/CentOS, these packages have to be installed;
 openssl-devel, libxml2-devel, libcurl-devel, libpng-devel)
 
+You can download the source code or the tar file for DEBrowser `here.<https://github.com/UMMS-Biocore/debrowser/releases>`_
+
 **Installation instructions from source:**
 
 1. Install the required dependencias by running the following commands in R or RStudio. 
