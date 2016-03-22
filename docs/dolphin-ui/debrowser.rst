@@ -17,7 +17,7 @@ Once logged in, click on the 'NGS Tracking' tab on the left, then click on 'DEBr
 This will bring you to the DEBrowser section within dolphin.  This will take you to the base DEBrowser page where you can either try the demo
 by clicking the 'Load Demo!' to load the demo set we have set up or you can load in locally downloaded tsv files for analysis.
 
-.. image:: dolphin_pics/menu_bar.png
+.. image:: dolphin_pics/input_tab.png
 	:align: center
 
 You can also load in RSEM results from runs with the corresponding results in a few easy steps.
