@@ -22,3 +22,4 @@ Contents:
    ngsplots
    tablecreator
    profile
+   debrowser

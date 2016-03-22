@@ -85,6 +85,8 @@ Rather than describing every set of options for every combination, we will go ov
 
 * *Generate Plots:*  Selecting this option will take you to the selected run's plot page.
 
+* *Change Permissions:* If you are the owner of the run, you can change the permissions of the selected run
+
 **View Which Runs?:**
 
 .. image:: dolphin_pics/status_sort.png

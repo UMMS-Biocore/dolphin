@@ -219,7 +219,9 @@ If you would like to carry out Bisulphite mapping, then the BisulphiteMapping ad
 
 Bisulphite Mapping is a bisulphite sequencing mapping program that indexes only digestion sites.
 
-In addition to running the BSMap program with it's additional parameters, the user can also run MCall with additional parameters to report statistics such as varius bias, confidence intervals, and methylation ratios.
+In addition to running the BSMap program with it's additional parameters, the user can also run MCall with additional parameters to report statistics such as various bias, confidence intervals, and methylation ratios.
+
+In order to run MethylKit, MCall must first be selected.
 
 **DiffMeth:**
 
@@ -229,9 +231,17 @@ Differential Methylation lets you compare the Bisulphite Mapping results of samp
 
 Using the selection boxes labeled 'Condition 1' and 'Condition 2' you can select which samples you wish to check against.
 
-In order to carry out DiffMeth, the user first has to select the BisulphiteMapping pipeline as it is required to carry out this step.
+In order to carry out DiffMeth, the user first has to select the BisulphiteMapping pipeline, select the 'Run MCall' checkbox, and select the 'Run MethylKit' checkbox as they are required to carry out this step.
 
 You may select DiffMeth multiple times, incase you want to run multiple pairwise comparisons on a single run.
+
+**HaplotypeCaller:**
+
+If you would like to use the Genome Analysis Toolkit's Haplotype Caller to detect SNP variants within your samples, the the HaplotypeCaller additional pipeline should be selected.
+
+In order to run Haplotype Caller, you must have a Tophat pipeline or ChipSeq pipeline already within your list of pipelines in order to generate the bam files needed for this step.
+
+HaplotypeCaller will output .vcf files which will contain possible variants in accordance with the genome selected.
 
 Submission
 ==========
