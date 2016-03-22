@@ -15,7 +15,9 @@ Let's go over the steps needed to be taken in order to access the Dolphin Web Se
 
 In order to use the Dolphin Web Service at UMass, you're going to need access to our High Performance Computing Cluster.
 
-Registration for the cluster can be found at this address 'https://www.umassrc.org/hpc/'
+Registration for the cluster can be found at `this address`_
+
+.. _this address: https://www.umassrc.org/hpc/
 
 Once the HPCC Admins group receives your registration form, they will send an email to your PI requesting the PI’s permission to give you access.
 
@@ -23,9 +25,9 @@ After it’s approved you will receive an email from the HPCC Admins group with yo
 
 **Joining the Galaxy Group**
 
-Once you have your Cluster account, you're going to want to email the 'helpdesk@umassmed.edu' to join the galaxy group.
+Once you have your Cluster account, you're going to want to email the helpdesk@umassmed.edu to join the galaxy group.
 
-Make sure to CC 'hpcc-support@umassmed.edu'
+Make sure to CC hpcc-support@umassmed.edu
 
 **Log Into Galaxy**
 
@@ -49,7 +51,7 @@ Once you're logged in, all you have to do is run this script:
 
 This is a one time script that you'll need to run in order to have access to the Dolphin Web Service.
 
-After using this script, it might take a few hours for our system to update before you can log into the Dolphin Web Service.  If a day goes by and you're still not able to access the Dolphin Web Service, please contact us at 'biocore@umassmed.edu'
+After using this script, it might take a few hours for our system to update before you can log into the Dolphin Web Service.  If a day goes by and you're still not able to access the Dolphin Web Service, please contact us at biocore@umassmed.edu
 
 **Project Space requirements**
 

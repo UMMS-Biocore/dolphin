@@ -25,7 +25,7 @@ However, if you have already started processing some initial runs, the table rea
 
 **ID:**
 
-This is a unique run identifier.  If contacting your local administrator or someone at 'biocore@umassmed.edu' about a specific run, this number will help identify the run quicker.
+This is a unique run identifier.  If contacting your local administrator or someone at biocore@umassmed.edu about a specific run, this number will help identify the run quicker.
 
 **Name:**
 

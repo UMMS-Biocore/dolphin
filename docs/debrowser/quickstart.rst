@@ -24,7 +24,9 @@ Once you've made your way to the website, you will be greeted with this tab on t
 	
 To begin the DESeq process, you will need to select your Data file (CSV format) to be analyzed using DESeq.
 
-If you do not have a dataset to use, you can use this `demo set <http://bioinfo.umassmed.edu/content/workshops/material/data.tsv>`_
+If you do not have a dataset to use, you can use this `demo set`_.
+
+.. _demo set: http://bioinfo.umassmed.edu/content/workshops/material/data.tsv
 
 This selection is under the 'Choose CSV File'.
 
@@ -125,9 +127,15 @@ The second qc plot is the heatmap generated based on your dataset.
 
 You can also choose the appropriate clustering and distance method you would like to use for this heatmap just abot the plot.
 
-For additional information about the clustering methods used, you can consult `this <http://www.inside-r.org/r-doc/stats/hclust>`_ website.
+For additional information about the clustering methods used, you can consult `this website`_.
 
-For additional information about the distance methods used, you can consult `this <http://www.inside-r.org/r-doc/stats/dist>`_ website.  For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
+.. _this website: http://www.inside-r.org/r-doc/stats/hclust
+
+For additional information about the distance methods used, you can consult `this website`_.
+
+.. _this website: http://www.inside-r.org/r-doc/stats/dist
+
+For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
 
 The third plot, the PCA plot (Principal Component Analysis)
 

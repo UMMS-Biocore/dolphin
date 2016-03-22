@@ -143,4 +143,4 @@ After hitting the submit button at the bottom of the page, you will be taken to 
 
 Sample names, whether entered in the Barcode Separation tab or within the Input Files tab, must not exist within the import you are trying to add to.
 
-If you're trying to resubmit files using fastlane, it will not allow for submission of samples under the same import with the same name.  Please contact your local administrator or 'biocore@umassmed.edu' for help with potential issues.
+If you're trying to resubmit files using fastlane, it will not allow for submission of samples under the same import with the same name.  Please contact your local administrator or biocore@umassmed.edu for help with potential issues.

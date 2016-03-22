@@ -58,4 +58,6 @@ You can also send a table into DEBrowser while viewing the generated table.  Jus
 
 Please be patient while the data loads into the Browser for it can take a few seconds before the data is fully loaded and you can run DESeq.
 
-For a more detailed guide on DEBrowser itself, please visit the `DEBrowser section.<dolphin.readthedocs.com>`_
+For a more detailed guide on DEBrowser itself, please visit the `DEBrowser section`_.
+
+.. _DEBrowser section: dolphin.readthedocs.com
