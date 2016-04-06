@@ -21,6 +21,20 @@ You can also download the example spreadsheet here:
 	:download:`single input directory <../download/example_template.xls>`
 	
 	:download:`multiple input directories <../download/example_template_multi_dirs.xls>`
+	
+Understanding the Heirarchy
+===========================
+
+Before we continue, let us discuss the way that your sample information will be stored.  Dolphin stores information into 3 specific teirs.
+
+At the top we have the Experiment Series, which essentially stores all of the information pertaining to your series of experiments.
+
+Branching out from the experiment series, you have your set of individual experiments, or in the case, Imports.
+
+Imports will contain all of the samples of that specific experiment as well as any other additional information that would link to your samples.
+
+The bottom teir, or samples, are the individual samples obtained with their specific information.  This information will help you better understand what each
+tab of the excel file will contain as we move forward.
 
 Filling Out the Excel File
 ==========================
@@ -42,27 +56,27 @@ The first tab of the spreadsheet is the Metadata tab.  This tab will reference t
 
 This tab will ask for information on:
 
-* *title:* The unique title of the Experiment Series
+* **title:** The unique title of the Experiment Series (Required)
 
-* *summary:* Detailed description of the goals/objectives of the Experiment Series
+* **summary:** Summarization of the goals/objectives of the Experiment Series
 
-* *overall design:* Describe the design details of the Experiment Series
+* **overall design:** Detailed description of the Experiment Series
 
-* *organization:* The organization behind the project
+* **organization:** The organization behind the project
 
-* *lab:* The lab within the organization
+* **lab:** The lab within the organization
 
-* *contributor:* First name, Initial, Last name.  You may add additional contributors by creating more 'contributor' cells in the A column with the actual contributors in the B column.
+* **contributor:** First name, Initial, Last name.  You may add additional contributors by creating more 'contributor' cells in the A column with the actual contributors in the B column.
 
-* *processed directory:* Full path for the processed output directory.  This path is where you want to keep all of the data generated.
+* **processed directory:** Full path for the processed output directory.  This path is where you want to keep all of the data generated. (Required)
 
-* *amazon bucket:* Optional amazon bucket link
+* **amazon bucket:** Optional amazon bucket link
 
 This is the only tab that will ask for information in a single column (column B).  The rest of the tabs will ask for information in rows.
 
 Additionally, if using the single input directory spreadsheet, the Metadata tab will include:
 
-* *input directory:* Full path for the input directory.  This path contains the fastq files you want to process.
+* **input directory:** Full path for the input directory.  This path contains the fastq files you want to process. (Required)
 
 Note that to add additional Imports/Samples to an already exsisting Experiment Series, the information about the experiment must be identical to that you are adding to.
 Processed directory, and amazon bucket does not have to be identical for each submission.
@@ -77,27 +91,27 @@ There can be multiple imports within this tab, each one residing on it's own row
 
 Information on imports include:
 
-* *Import Name:* The name of the import being submitted.
+* **Import Name:** The name of the import/experiment being submitted. (Required)
 
-* *Sequencing id:* The id from the sequencing facility.
+* **Sequencing id:** The id from the sequencing facility.
 
-* *Sequencing facility:* Location of where sequencing took place.
+* **Sequencing facility:** Location of where sequencing took place.
 
-* *Cost:* The cost of the sequencing.
+* **Cost:** The cost of the sequencing.
 
-* *Date submitted:* Date of request for sequencing.
+* **Date submitted:** Date of request for sequencing.
 
-* *Date received:* Date of sequencing results.
+* **Date received:** Date of sequencing results.
 
-* *% PhiX requested:* The requested amount of PhiX in lane.
+* **% PhiX requested:** The requested amount of PhiX in lane.
 
-* *% PhiX in lane:* Actual amount of PhiX in lane.
+* **% PhiX in lane:** Actual amount of PhiX in lane.
 
-* *# of Samples:* Number of samples within import.
+* **# of Samples:** Number of samples within import.
 
-* *Resequenced?:*  Was this import resequenced?
+* **Resequenced?:**  Was this import resequenced?
 
-* *Notes:* Additional notes about this import.
+* **Notes:** Additional notes about this import.
 
 Please note that import name is required for submission.
 
@@ -109,21 +123,21 @@ There can be multiple protocols within this tab, each one residing on it's own r
 
 Protocol information includes:
 
-* *protocol name:* The name of the protocol.
+* **protocol name:** The name of the protocol. (Required)
 
-* *growth protocol:* Protocols used to grow the organism/cells.
+* **growth protocol:** Protocols used to grow the organism/cells.
 
-* *extract protocol:* Protocols used to extract/prepare the sequenced material.
+* **extract protocol:** Protocols used to extract/prepare the sequenced material.
 
-* *library construction protocol:* Library contruction protocol.
+* **library construction protocol:** Library contruction protocol.
 
-* *crosslinking method:* The crosslinking method if any.
+* **crosslinking method:** The crosslinking method if any.
 
-* *fragmentation method:* The fragmentation method if any.
+* **fragmentation method:** The fragmentation method if any.
 
-* *strand-specific:* Is this protocol strand specific?
+* **strand-specific:** Is this protocol strand specific?
 
-* *library strategy:* Sequencing techniques of this library.
+* **library strategy:** Sequencing techniques of this library.
 
 Please note that protocol name is required for submission.
 
@@ -135,65 +149,65 @@ There can be multiple samples within this tab, each one residing on it's own row
 
 Sample information includes:
 
-* *Sample name:* The name of the sample.
+* **Sample name:** The name of the sample. (Required)
 
-* *Import name:* The name of the import in which the sample resides.  This import must be present in the Imports tab.
+* **Import name:** The name of the import in which the sample resides.  This import must be present in the Imports tab. (Required)
 
-* *Protocol name:* The name of the protocol in which the sample used. This protocol must be present in the Protocols tab.
+* **Protocol name:** The name of the protocol in which the sample used. This protocol must be present in the Protocols tab. (Required)
 
-* *barcode:* This samples barcode.
+* **barcode:** This samples barcode.
 
-* *title:* Descriptive title for the sample.
+* **title:** Descriptive title for the sample.
 
-* *batch id:* This samples batch id.
+* **batch id:** This samples batch id.
 
-* *source symbol:* Symbol used for the Source.  Symbol is a 4 character string.
+* **source symbol:** Symbol used for the Source.  Symbol is a 4 character string.
 
-* *source:* Brief description of cell line, biological material, or tissue.
+* **source:** Brief description of cell line, biological material, or tissue.
 
-* *organism:* List the organism from which this sample came from.
+* **organism:** List the organism from which this sample came from.
 
-* *biosample type:* Type of biosample, ie. in vitro.
+* **biosample type:** Type of biosample, ie. in vitro.
 
-* *molecule:* Type of molecule extracted from the sample.
+* **molecule:** Type of molecule extracted from the sample.
 
-* *description:* Added information that pertains to other fields.
+* **description:** Added information that pertains to other fields.
 
-* *instrument model:* Sequencing instrument used.
+* **instrument model:** Sequencing instrument used.
 
-* *average insert size:* Average paired-end insert size.
+* **average insert size:** Average paired-end insert size.
 
-* *read length:* The length of the reads.
+* **read length:** The length of the reads.
 
-* *Genotype:* The genotype of the sample.
+* **Genotype:** The genotype of the sample.
 
-* *Condition Symbol:* Symbols representing the conditions from the condition column.  Multiple condition symbols may be present if multiple conditions match the symbols and they are comma separated.
+* **Condition Symbol:** Symbols representing the conditions from the condition column.  Multiple condition symbols may be present if multiple conditions match the symbols and they are comma separated.
 
-* *Condition:* Specific condition(s) pertaining to the sample.  Multiple conditions may be present as long as they are comma separated.
+* **Condition:** Specific condition(s) pertaining to the sample.  Multiple conditions may be present as long as they are comma separated.
 
-* *concentration:* Concentration of Conditions.
+* **concentration:** Concentration of Conditions.
 
-* *treatment manufacturer:* Manufacturer of treatments.
+* **treatment manufacturer:** Manufacturer of treatments.
 
-* *Donor:* Name of sample donor, Typically in the D## format.
+* **Donor:** Name of sample donor, Typically in the D## format.
 
-* *Time:* Time (in minutes) post treatment.
+* **Time:** Time (in minutes) post treatment.
 
-* *Biological Replica:* Biological replica number.
+* **Biological Replica:** Biological replica number.
 
-* *Technical Replica:* Technical Replica number.
+* **Technical Replica:** Technical Replica number.
 
-* *spikeins:* Yes or No based on if spike-ins were introduced into the sample.
+* **spikeins:** Yes or No based on if spike-ins were introduced into the sample.
 
-* *3' Adapter sequence:*  3' Adapter sequence if present.
+* **3' Adapter sequence:**  3' Adapter sequence if present.
 
-* *Notebook reference:* Reference notebook information.
+* **Notebook reference:** Reference notebook information.
 
-* *notes:*  Any other additional notes for the sample.
+* **notes:**  Any other additional notes for the sample.
 
-* *characteristics: newtag:* Biosource characteristic.
+* **characteristics: newtag:** Biosource characteristic.
 
-* *characteristics: tag:* Biosource characteristic.
+* **characteristics: tag:** Biosource characteristic.
 
 Please note that Sample name must be present and the Import name and Protocol name must match one provided in their respected tabs.
 
@@ -205,9 +219,9 @@ There can be multiple entries on this tab.
 
 Directory information includes:
 
-* *Directory ID:* A specified ID to associate to files within the file tab.
+* **Directory ID:** A specified ID to associate to files within the file tab. (Required)
 
-* *Input directory:* Location within the cluster/host machine where the fastq files for this submission are stored.
+* **Input directory:** Location within the cluster/host machine where the fastq files for this submission are stored. (Required)
 
 **FILES:**
 
@@ -217,11 +231,11 @@ There can be multiple entries on this tab, as well as multiple entries per impor
 
 File information includes:
 
-* *Sample or Import Name (Enter same name for multiple files):* The sample or import name.  These names must be within there respected tabs.
+* **Sample or Import Name (Enter same name for multiple files):** The sample or import name.  These names must be within there respected tabs. (Required)
 
-* *Directory ID:* A specified ID to associate to directories within the dirs tab.
+* **Directory ID:** A specified ID to associate to directories within the dirs tab. (Required)
 
-* *file name(comma separated for paired ends):* The file fastq file name.  If paired end, list both files seperated by a comma.
+* **file name(comma separated for paired ends):** The file fastq file name.  If paired end, list both files seperated by a comma. (Required)
 
 Please note that these fields are all required, and that if using the single directory input spreadsheet the directory id will not be present.
 
