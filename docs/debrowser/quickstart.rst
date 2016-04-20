@@ -23,37 +23,88 @@ Once you've made your way to the website, you will be greeted with this tab on t
 	:align: center
 	
 To begin the DESeq process, you will need to select your Data file (CSV format) to be analyzed using DESeq.
-
-If you do not have a dataset to use, you can use this `demo set`_.
+If you do not have a dataset to use, you can use this `demo set`_ or you can select to use the built in demo
+by clicking on the 'Load Demo!'.
 
 .. _demo set: http://bioinfo.umassmed.edu/content/workshops/material/data.tsv
 
-This selection is under the 'Choose CSV File'.
-
-Once you've selected your file and the upload has completed, you will then be able to select your conditions
-
-in which you wish to compare using DESeq.
+Once you've selected your file and the upload has completed, you will then be shown the samples listed within your
+file uploaded as well as multiple options.
 
 .. image:: debrowser_pics/file_load.png
 	:align: center
-	
-.. image:: debrowser_pics/condition_selection.png
+
+The first option, 'Go to DE Analysis', takes you to the next step within the DESeq workflow.
+In order to run DESeq on your input data you first need to select which samples will go into your
+conditions.  You can run multiple condition comparisons and view the results seperately as well.
+To remove samples from a condition, simply select the sample you wish to remove and hit the delete/backspace key.
+
+.. image:: debrowser_pics/de_analysis.png
+	:align: center
+
+The second option, 'Go to QC plots!', takes you to a page where you can view quality control metrics on your data input.
+The page opens with an all-to-all plot displaying the correlation between each sample.  Left of this plot is a panel which
+contains various parameters to alter the look of your plot such as width and height.  In addition to the all-to-all plot,
+you can also view a heatmap representation of your data as well as a Principal Component Analysis (PCA) plot by selecting
+the specific plot option on the left panel under 'QC Plots'.  You can also select the type of clustering and distance method for
+the heatmap produced to further customize your quality control measures.
+
+.. image:: debrowser_pics/intro_qc_all2all.png
 	:align: center
 	
-Once you've selected your conditions, you can then hit 'Run DESeq!' to begin.
+.. image:: debrowser_pics/intro_qc_heatmap.png
+	:align: center
+	
+.. image:: debrowser_pics/intro_qc_pca.png
+	:align: center
 
-Analyzing The Results
-=====================
+You can also view specific tables of your input data such as all detected genes, search for a specific geneset
+where you input a comma-seperated list of genes or regex terms to search for, or view the most varied samples based
+on user input parameters  To view these tables, you must select the tab as well as the dataset from the dropdown menu on the left panel.
+By selecting your prefered dataset, additional options will also be made to you on the left panel for further customization
+such as the genelist.
 
-Once DESeq has finished and the results have been uploaded into DEBrowser, the initial scatterplot of
+.. image:: debrowser_pics/intro_genelist.png
+	:align: center
 
-the results will be uploaded.
+.. image:: debrowser_pics/intro_varied.png
+	:align: center
+	
+Once you are happy with your dataset and have selected your conditions within the 'DE Analysis' section,
+you can then hit 'Submit!' to begin.
+
+The Main Plots
+==============
+
+After clicking on the 'Submit!' button, DESeq2 will analyze your comparisons
+and store the results into seperate data tables.  Shiny will then allow you
+to access this data, with multiple interactive features, at the click of a
+button.  It is important to note that the resulting data produced from DESeq
+is normalized. Upon finishing the DESeq analysis, a tab based menu will appear
+with multiple options.
+
+.. image:: debrowser_pics/info_tabs.png
+	:align: center
+
+The first tab, the 'Main Plots' section, is where you will be able to view
+the interactive results plots.  Plot choices include:
+
+Scatter plot
 
 .. image:: debrowser_pics/scatter_plot.png
 	:align: center
+
+Volcano plot
+
+.. image:: debrowser_pics/volcano.png
+	:align: center
+	
+MA plot
+
+.. image:: debrowser_pics/ma.png
+	:align: center
 	
 You can hover over the scatterplot points to display more information about the point selected.
-
 A few bargraphs will be generated for the user to view as soon as a scatterplot point is hovered over.
 
 .. image:: debrowser_pics/bargraph.png
@@ -73,8 +124,7 @@ Once you've selected a specific region, a new scatterplot of the selected area w
 	:align: center
 	
 You also have a wide array of options when it comes to fold change cut-off levels, padj cut-off values,
-
-and up/down regulated genes.
+which comparison set to use, and dataset of genes to analyze.
 
 .. image:: debrowser_pics/filters.png
 	:align: center
@@ -84,94 +134,43 @@ If you can select the type of plot at the bottom of the filter tab.
 .. image:: debrowser_pics/main_plots.png
 	:align: center
 	
-The default is a Scatter plot, but you can also choose from a Volcano plot and a MA plot.
-
-.. image:: debrowser_pics/volcano.png
-	:align: center
-	
-.. image:: debrowser_pics/ma.png
-	:align: center
-
 You can download the results in CSV or TSV format by selecting your 'File type' and clicking the 'download' button once you've ran DESeq.
+You can also download the plot or graphs themselves by clicking on the gear in the upper-left corner of each plot or graph.
 
-Quality Control Plots/Tables
-=======================
+Quality Control Plots
+=====================
 
-After DESeq has run, and you've had some time to play with the initial plots generated, You may notice the additional tabs above the plots.
-
-.. image:: debrowser_pics/info_tabs.png
-	:align: center
-	
-These tabs display qc plots or tables based on your current padj/fold-change cut-off values.
-
-By selecting qc plots, you will be shown qc plots based on the 'QC Plots' selection on the left tab.
-
-QC plots will start off on the All2All plot.  To determine which qc plot you will be viewing, you
-
-can select the 'Add.' tab within the filters box to change the types.
-
-.. image:: debrowser_pics/add_plots_opts.png
-	:align: center
-
-The first selection, 'All2All', displays an all-to-all plot of your conditions slected.  As you change the padj and
-
-fold-change cutt-off values, the data in these plots will also change!
-
-.. image:: debrowser_pics/all2all.png
-	:align: center
-	
-The second qc plot is the heatmap generated based on your dataset.
-
-.. image:: debrowser_pics/heatmap.png
-	:align: center
-
-You can also choose the appropriate clustering and distance method you would like to use for this heatmap just abot the plot.
+Selecting the 'QC Plots' tab will take you to the quality control plots
+section.  These QC plots are very similar to the QC plots shown before
+running DESeq, however the dataset being used here depends on the one
+you select on the left menu.  In addition to the all-to-all plot shown
+within the previous QC analysis, users can also view a heatmap and PCA
+plot of their analyzed data by selecting the proper plot on the left
+menu.  You can also choose the appropriate clustering and distance method you would
+like to use for this heatmap just abot the plot just like in the previous QC section.
 
 For additional information about the clustering methods used, you can consult `this website`_.
 
 .. _this website: http://www.inside-r.org/r-doc/stats/hclust
 
-For additional information about the distance methods used, you can consult `this website`_.
+For additional information about the distance methods used, you can consult `here`_.
 
-.. _this website: http://www.inside-r.org/r-doc/stats/dist
+.. _here: http://www.inside-r.org/r-doc/stats/dist
 
 For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
 
-The third plot, the PCA plot (Principal Component Analysis)
-
-.. image:: debrowser_pics/pca.png
-	:align: center
-
 Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
 
-In addition to these exciting qc plots, you also have access to the data generated within table form.
+GO Term Plots
+=============
 
-The data generated is also sorted based on the following datasets:
-
-* All Detected
-* Up Regulated
-* Down Regulated
-* Selected scatterplot points
-
-.. image:: debrowser_pics/datatable.png
-	:align: center
-	
-The tables contain the following information:
-
-* ID - The specific gene ID
-* Sample Names - The names of the samples given and they're corresponding tmm normalized counts
-* Conditions - The log averaged values
-* padj - padjusted value
-* log2FoldChange - The Log2 fold change
-* foldChange - The fold change
-* log10padj - The log 10 padjusted value
-
-GO Term Tab
-===========
-
-The final tab gives the user access to specific GO plots.  Make sure that if you're interested in the GO plots,
-
-to switch the tab within the filter box to 'GO'
+The next tab, 'GO Term', takes you to the ontology comparison portion of
+DEBrowser.  From here you can select the standard dataset options such as
+p-adjust value, fold change cut off value, which comparison set to use, and
+which dataset to use on the left menu.  In addition to these parameters, you
+also can choose from the 4 different ontology plot options: 'enrichGO',
+'enrichKEGG', 'Disease', and 'compareCluster'.  Selecting one of these plot
+options queries their specific databases with your current DESeq results.
 
 .. image:: debrowser_pics/go_plots_opts.png
 	:align: center
@@ -192,7 +191,6 @@ The types of plots you will be able to generate include:
 
 * Summary - bar plot
 * GOdotplot - dot plot
-* enrichMap - *currently under construction*
 
 Once you have adjusted all of your parameters, you may hit the submit button in the top right and then wait
 
@@ -208,4 +206,25 @@ Example GOdotplot:
 .. image:: debrowser_pics/go_dot_plot.png
 	:align: center
 	
-Now you can enjoy all of the analysis tools within DEBrowser!
+Data Tables
+===========
+
+The data generated is also sorted based on the following datasets:
+
+* All Detected
+* Up Regulated
+* Down Regulated
+* Selected scatterplot points
+
+.. image:: debrowser_pics/datatable.png
+	:align: center
+	
+The tables contain the following information:
+
+* ID - The specific gene ID
+* Sample Names - The names of the samples given and they're corresponding tmm normalized counts
+* Conditions - The log averaged values
+* padj - padjusted value
+* log2FoldChange - The Log2 fold change
+* foldChange - The fold change
+* log10padj - The log 10 padjusted value

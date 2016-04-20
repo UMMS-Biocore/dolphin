@@ -17,56 +17,20 @@ You can download the source code or the tar file for DEBrowser `here.<https://gi
 
 **Installation instructions from source:**
 
-1. Install the required dependencias by running the following commands in R or RStudio. 
+1. Install the required dependencies by running the following commands in R or RStudio. 
 
-        ### Packages for R.
-
-		install.packages("ggvis")
-
-		install.packages("ggplot2")
-
-		install.packages("RColorBrewer")
-
-		install.packages("DT")
-
-		install.packages("gplots")
-
-		install.packages("devtools")
-
-
-	### BioC Packages for R.
-		
 		source("http://www.bioconductor.org/biocLite.R")
 
-		biocLite()
+		biocLite("debrowser")
 
-		biocLite("clusterProfiler")
-
-		biocLite("ReactomePA")
-
-		biocLite("shiny")
-
-		biocLite("DESeq2")
-
-		biocLite("annotate")
-
-		biocLite("AnnotationDbi")
-
-		biocLite("org.Hs.eg.db")
-
-		biocLite("DOSE")
-
-		biocLite("edgeR")
-
-
-2. Install debrowser using the command below
-
-        R CMD INSTALL debrowser_0.99.0.tar.gz
-
-3. Start R and load the library
+2. Start R and load the library
 
         library(debrowser)
 
-4. Start DE browser
+3. Start DE browser
 
         startDEBrowser()
+
+Once you run 'startDEBrowser()' shiny will launch a web browser with your local version of DEBrowser running and ready to use!
+
+For more information about DEBrowser, please visit our Quick-start Guide or our DESeq/DEBrowser section within readthedocs.
