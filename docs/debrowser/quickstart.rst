@@ -124,9 +124,17 @@ Once you've selected a specific region, a new scatterplot of the selected area w
 	:align: center
 	
 You also have a wide array of options when it comes to fold change cut-off levels, padj cut-off values,
-which comparison set to use, and dataset of genes to analyze.
+which comparison set to use, and dataset of genes to analyze. 
 
 .. image:: debrowser_pics/filters.png
+	:align: center
+
+It is important to note that when conducting multiple comparisons, the
+comparisons are labeled based on the order that they are input.
+If you don't remember which samples are in your current comparison
+you can always view the samples in each condition at the top of the main plots.
+
+.. image:: debrowser_pics/selected_conditions.png
 	:align: center
 
 If you can select the type of plot at the bottom of the filter tab.
@@ -178,48 +186,46 @@ options queries their specific databases with your current DESeq results.
 Your GO plots include:
 
 * enrichGO - use enriched GO terms
-* enrichKEGG - *currently under construction*
-* compareClusters - comparison of your clustered data
+* enrichKEGG - use enriched KEGG terms
 * Disease - enriched for diseases
-
-After you select what to analyze in your GO plot, then you can select aditional parameters for your GO analysis.
-
-.. image:: debrowser_pics/go_opts.png
-	:align: center
+* compareClusters - comparison of your clustered data
 
 The types of plots you will be able to generate include:
 
-* Summary - bar plot
-* GOdotplot - dot plot
-
-Once you have adjusted all of your parameters, you may hit the submit button in the top right and then wait
-
-for the results to show on screen!
-
-Example Summary plot:
+Summary plot:
 
 .. image:: debrowser_pics/go_summary.png
 	:align: center
 
-Example GOdotplot:
+GOdotplot:
 
 .. image:: debrowser_pics/go_dot_plot.png
 	:align: center
+
+Changing the type of ontology to use will also produce custom parameters for that specific ontology at the bottom of the
+left option panel.
+
+Once you have adjusted all of your parameters, you may hit the submit button in the top right and then wait
+for the results to show on screen!
 	
 Data Tables
 ===========
 
-The data generated is also sorted based on the following datasets:
+The rest of the tabs at the top of the screen indicated various different data tables.
+These datatables include:
 
 * All Detected
 * Up Regulated
 * Down Regulated
 * Selected scatterplot points
+* Genes within the genelist
+* Most varied genes
+* Comparison differences
 
 .. image:: debrowser_pics/datatable.png
 	:align: center
 	
-The tables contain the following information:
+All of the tables tables except the Comparisons contain the following information:
 
 * ID - The specific gene ID
 * Sample Names - The names of the samples given and they're corresponding tmm normalized counts
@@ -228,3 +234,18 @@ The tables contain the following information:
 * log2FoldChange - The Log2 fold change
 * foldChange - The fold change
 * log10padj - The log 10 padjusted value
+
+The Comparisons table generates values based on the number of comparisons you have conducted.
+For each pairwise comparison, these values will be generated:
+
+* foldChange of comparison A vs B
+* pvalue of comparison A vs B
+* padj value of comparison A vs B
+
+.. image:: debrowser_pics/comparisons.png
+	:align: center
+	
+You can further customize and filter each specific table a multitude of ways.  For unique table or dataset options, select the type of
+table dataset you would like to customize on the left panel under 'Choose a dataset' to view it's additional options.
+All of the tables have a built in search function at the top right of the table and you can further sort the table
+by column by clicking on the column header you wish to sort by.
