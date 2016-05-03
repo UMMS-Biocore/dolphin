@@ -169,11 +169,11 @@ For additional information about the distance methods used, you can consult `her
 
 For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
 Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
-
 For the Heatmap, you can also view an interactive session of the heatmap by selecting the 'Interactive' checkbox before submitting your
-heatmap request.  Just like in the Main Plots, you can click and drag to create a selection.  To selection a specific portion of the heatmap, make sure
+heatmap request.  Make sure that before selecting the interactive heatmap option that your dataset being used is ''Up+down'.
+Just like in the Main Plots, you can click and drag to create a selection.  To select a specific portion of the heatmap, make sure
 to highlight the middle of the heatmap gene box in order to fully select a specific gene.  This selection can be used later within the
-GO Term plots for specific queries on your selection!
+GO Term plots for specific queries on your selection.
 
 .. image:: debrowser_pics/interative_heatmap.png
 	:align: center
@@ -220,21 +220,21 @@ for the results to show on screen!
 Data Tables
 ===========
 
-The rest of the tabs at the top of the screen indicated various different data tables.
+The lasttab at the top of the screen displays various different data tables.
 These datatables include:
 
 * All Detected
 * Up Regulated
 * Down Regulated
+* Up+down Regulated
 * Selected scatterplot points
-* Genes within the genelist
 * Most varied genes
 * Comparison differences
 
 .. image:: debrowser_pics/datatable.png
 	:align: center
 	
-All of the tables tables except the Comparisons contain the following information:
+All of the tables tables, except the Comparisons table, contain the following information:
 
 * ID - The specific gene ID
 * Sample Names - The names of the samples given and they're corresponding tmm normalized counts
@@ -247,6 +247,7 @@ All of the tables tables except the Comparisons contain the following informatio
 The Comparisons table generates values based on the number of comparisons you have conducted.
 For each pairwise comparison, these values will be generated:
 
+* Values for each sample used 
 * foldChange of comparison A vs B
 * pvalue of comparison A vs B
 * padj value of comparison A vs B
@@ -257,4 +258,6 @@ For each pairwise comparison, these values will be generated:
 You can further customize and filter each specific table a multitude of ways.  For unique table or dataset options, select the type of
 table dataset you would like to customize on the left panel under 'Choose a dataset' to view it's additional options.
 All of the tables have a built in search function at the top right of the table and you can further sort the table
-by column by clicking on the column header you wish to sort by.
+by column by clicking on the column header you wish to sort by.  The 'Search' box on the left panel allows for multiple searches via
+a comma-seperated list.  You can additionally use regex terms such as "^al" or "\*lm" for even more advanced searching.
+This search will be applied to wherever you are within DEBrowser, including both the plots and the tables.
