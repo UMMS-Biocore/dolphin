@@ -2,7 +2,7 @@
 Quick-start Guide
 *****************
 
-This guide is a quick walkthrough for the DESeq Browser from start to finish.
+This guide is walkthrough for the DESeq Browser from start to finish.
 
 Getting Started
 ===============
@@ -17,19 +17,22 @@ library(debrowser)
 
 startDEBrowser()
 
-Once you've made your way to the website, you will be greeted with this tab on the left:
+For more information on installing DEBrowser locally, please consult our Local Install Guide.
+
+Once you've made your way to the website, or you have a local instance of DEBrowser running, you will be greeted with this tab on the left:
 
 .. image:: debrowser_pics/input_tab.png
 	:align: center
 	
 To begin the DESeq process, you will need to select your Data file (CSV format) to be analyzed using DESeq.
-If you do not have a dataset to use, you can use this `demo set`_ or you can select to use the built in demo
-by clicking on the 'Load Demo!'.
+If you do not have a dataset to use, you can select to use the built in demo by clicking on the 'Load Demo!'.
+To view the entire demo data file, you can download this `demo set`_.
 
 .. _demo set: http://bioinfo.umassmed.edu/content/workshops/material/data.tsv
 
+For more information about the input file, please visit our DESeq/DEBrowser tab within Readthedocs.
 Once you've selected your file and the upload has completed, you will then be shown the samples listed within your
-file uploaded as well as multiple options.
+file uploaded as well as a few options.
 
 .. image:: debrowser_pics/file_load.png
 	:align: center
@@ -38,13 +41,20 @@ The first option, 'Go to DE Analysis', takes you to the next step within the DES
 In order to run DESeq on your input data you first need to select which samples will go into your
 conditions.  You can run multiple condition comparisons and view the results seperately as well.
 To remove samples from a condition, simply select the sample you wish to remove and hit the delete/backspace key.
+To add a sample to a condition you simply have to click on one of the condition text boxes to bring up a list of
+samples you can add to that comparison.  Click on the sample you wish to add from the list and it will be added
+to the textbox for that comparison.
 
 .. image:: debrowser_pics/de_analysis.png
 	:align: center
 
 The second option, 'Go to QC plots!', takes you to a page where you can view quality control metrics on your data input.
 The page opens with an all-to-all plot displaying the correlation between each sample.  Left of this plot is a panel which
-contains various parameters to alter the look of your plot such as width and height.  In addition to the all-to-all plot,
+contains various parameters to alter the look of your plot such as width and height.  You can change the type of dataset
+being viewed within these QC plots by selecting the dataset you want at the top of the left panel.  Each dataset can have its
+own unique parameters to change and alter your QC plots.  
+
+In addition to the all-to-all plot,
 you can also view a heatmap representation of your data as well as a Principal Component Analysis (PCA) plot by selecting
 the specific plot option on the left panel under 'QC Plots'.  You can also select the type of clustering and distance method for
 the heatmap produced to further customize your quality control measures.
@@ -58,17 +68,9 @@ the heatmap produced to further customize your quality control measures.
 .. image:: debrowser_pics/intro_qc_pca.png
 	:align: center
 
-You can also view specific tables of your input data such as all detected genes, search for a specific geneset
-where you input a comma-seperated list of genes or regex terms to search for, or view the most varied samples based
-on user input parameters  To view these tables, you must select the tab as well as the dataset from the dropdown menu on the left panel.
-By selecting your prefered dataset, additional options will also be made to you on the left panel for further customization
-such as the genelist.
-
-.. image:: debrowser_pics/intro_genelist.png
-	:align: center
-
-.. image:: debrowser_pics/intro_varied.png
-	:align: center
+You can also view specific tables of your input data for each type of dataset available and search for a specific geneset
+by inputting a comma-seperated list of genes or regex terms to search for in the search box within the left panel.
+To view these tables, you must select the tab labeled 'Tables' as well as the dataset from the dropdown menu on the left panel.
 	
 Once you are happy with your dataset and have selected your conditions within the 'DE Analysis' section,
 you can then hit 'Submit!' to begin.
@@ -118,7 +120,7 @@ You can also select a specific region within the scatter plot and zoom in on the
 .. image:: debrowser_pics/scatter_plot_selection.png
 	:align: center
 	
-Once you've selected a specific region, a new scatterplot of the selected area will appear on the left
+Once you've selected a specific region, a new scatterplot of the selected area will appear on the right
 
 .. image:: debrowser_pics/scatter_plot_zoom.png
 	:align: center
