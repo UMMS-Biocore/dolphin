@@ -72,7 +72,7 @@ You can also view specific tables of your input data for each type of dataset av
 by inputting a comma-seperated list of genes or regex terms to search for in the search box within the left panel.
 To view these tables, you must select the tab labeled 'Tables' as well as the dataset from the dropdown menu on the left panel.
 	
-Once you are happy with your dataset and have selected your conditions within the 'DE Analysis' section,
+Once you are happy with your dataset and you have selected your conditions within the 'DE Analysis' section,
 you can then hit 'Submit!' to begin.
 
 The Main Plots
@@ -152,8 +152,8 @@ Quality Control Plots
 
 Selecting the 'QC Plots' tab will take you to the quality control plots
 section.  These QC plots are very similar to the QC plots shown before
-running DESeq, however the dataset being used here depends on the one
-you select on the left menu.  In addition to the all-to-all plot shown
+running DESeq and the dataset being used here depends on the one
+you select in the left panel.  In addition to the all-to-all plot shown
 within the previous QC analysis, users can also view a heatmap and PCA
 plot of their analyzed data by selecting the proper plot on the left
 menu.  You can also choose the appropriate clustering and distance method you would
@@ -168,8 +168,15 @@ For additional information about the distance methods used, you can consult `her
 .. _here: http://www.inside-r.org/r-doc/stats/dist
 
 For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
-
 Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
+
+For the Heatmap, you can also view an interactive session of the heatmap by selecting the 'Interactive' checkbox before submitting your
+heatmap request.  Just like in the Main Plots, you can click and drag to create a selection.  To selection a specific portion of the heatmap, make sure
+to highlight the middle of the heatmap gene box in order to fully select a specific gene.  This selection can be used later within the
+GO Term plots for specific queries on your selection!
+
+.. image:: debrowser_pics/interative_heatmap.png
+	:align: center
 
 GO Term Plots
 =============
