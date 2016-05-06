@@ -175,7 +175,7 @@ Just like in the Main Plots, you can click and drag to create a selection.  To s
 to highlight the middle of the heatmap gene box in order to fully select a specific gene.  This selection can be used later within the
 GO Term plots for specific queries on your selection.
 
-.. image:: debrowser_pics/interative_heatmap.png
+.. image:: debrowser_pics/interactive_heatmap.png
 	:align: center
 
 GO Term Plots
