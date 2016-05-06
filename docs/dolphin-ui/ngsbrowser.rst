@@ -68,6 +68,8 @@ Next is the actual contents of the table itself followed by page navigation butt
 
 For the each of the tables, selection checkboxes are located on the right side of each table row.  A helpful '!' button is also placed near these checkboxes to indicate that the Import/Sample is not currently ready for use due to the processing step.
 
+Within the Samples and the Imports table, the column labeled 'Backup' lets you know the status of your fastq file backup to AWS.  Grey buttons mean there is no backup checksum to compare to your fastq file.  Red buttons means that the fastq checksum and the AWS checksum do not match.  A blue button lets the user know that the last modification to this upload was over 2 months ago, and the green button lets the user know that file checksum matches the AWS checksum.
+
 **Selection Details:**
 
 .. image:: dolphin_pics/details_table.png
