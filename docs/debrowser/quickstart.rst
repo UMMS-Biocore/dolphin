@@ -11,6 +11,8 @@ First off, we need to head to the DEBrowser webpage at this url:
 
 http://debrowser.umassmed.edu/
 
+**Due to the power maintanence, debrowser.umassmed.edu will be offline till May 18, 2016 - 5:00pm**
+
 Alternatively, if you have the R package installed, you can call these R commands:
 
 library(debrowser)
@@ -24,11 +26,14 @@ Once you've made your way to the website, or you have a local instance of DEBrow
 .. image:: debrowser_pics/input_tab.png
 	:align: center
 	
-To begin the DESeq process, you will need to select your Data file (CSV format) to be analyzed using DESeq.
+To begin the DESeq process, you will need to select your Data file (TSV format) to be analyzed using DESeq.
 If you do not have a dataset to use, you can select to use the built in demo by clicking on the 'Load Demo!'.
-To view the entire demo data file, you can download this `demo set`_.
+To view the entire demo data file, you can download this `demo set`_.  For an example case study, try our advanced
+demo which you can download `here`_.
 
-.. _demo set: http://bioinfo.umassmed.edu/content/workshops/material/data.tsv
+.. _demo set: http://bioinfo.umassmed.edu/pub/debrowser/simple_demo.tsv
+
+.. _here: http://bioinfo.umassmed.edu/pub/debrowser/advanced_demo.tsv
 
 For more information about the input file, please visit our DESeq/DEBrowser tab within Readthedocs.
 Once you've selected your file and the upload has completed, you will then be shown the samples listed within your
