@@ -14,7 +14,19 @@ First we are going to create a simple test pipeline. To be able to create a test
 
 Installation
 ============
-Please check quick start guide for Docker or for HPC please use installation guide for the appropriate cluster section. 
+Please check quick start guide for Docker or for HPC please use installation guide for the appropriate cluster section.
+
+After installing dolphin-tools, you are going to want to create a ".salt" file in your default_params folder with it's contents similar to this:
+
+.. code-block:: bash
+
+	[Dolphin]
+	SALT=
+	PEPPER=
+	MASTER=
+	AMAZON=
+	
+Make sure you fill in the values for each of these variables with your desired passphrases.	
 
 Workflow file
 =============
