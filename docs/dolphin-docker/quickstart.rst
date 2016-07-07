@@ -101,3 +101,5 @@ After installing dolphin-ui within docker, you are going to want to create a ".s
 	AMAZON=
 	
 Make sure you fill in the values for each of these variables with your desired passphrases.
+
+These variables are used for specific passcodes to encrypt and decrypt valuable information that you would want to protect.
