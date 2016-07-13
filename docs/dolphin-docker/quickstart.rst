@@ -90,22 +90,19 @@ cd /usr/local/share/dolphin_tools/test/
 
 ./run.bash w1.txt
 
+Creating needed password variables
+==================================
 
+After installing dolphin-ui within docker, you are going to want to create a ".salt" file in your config folder with it's contents similar to this:
 
+.. code-block:: bash
 
+	[Dolphin]
+	SALT=
+	PEPPER=
+	MASTER=
+	AMAZON=
+	
+Make sure you fill in the values for each of these variables with your desired passphrases.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+These variables are used for specific passcodes to encrypt and decrypt valuable information that you would want to protect.
