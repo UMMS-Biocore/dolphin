@@ -15,6 +15,7 @@ Python Dependencies
 Dolphin, as you may have noticed, uses python for some scripts in order to generate pipelines or secure data within the databse.
 Here is a list of packages you will need in order to properly implement Dolphin within your system:
 
+	* pycrypto
 	* simple-crypt
 	* boto
 	* boto3
@@ -23,3 +24,5 @@ Here is a list of packages you will need in order to properly implement Dolphin 
 	* optparse
 	* binascii
 	* subprocess
+	
+You can install these modules with the "pip install" feature of python.
