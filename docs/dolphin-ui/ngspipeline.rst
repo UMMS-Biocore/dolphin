@@ -150,6 +150,8 @@ For these custom sequence sets, you will have to supply:
 * Description of the index
 * Whether to filter out the reads mapped to this custom index
 
+Please remove all spacing from the naming of sequences within your .fasta file in order for the pipeline to properly prepare quantification tables.
+
 You can add multiple custom sequence sets if desired.
 
 **Common RNAs:**
@@ -177,6 +179,9 @@ RSEM is an additional pipeline that will estimate gene and isoform expression le
 
 Upon selection of RNASeqRSEM, you have the option of selecting additional RSEM command line parameters as well as IGC/TDF or BigWig conversions.
 
+The RSEM pipeline also has an option to generate RSeQC reports.
+For more information on the RSeQC reports, you can view the program used, 'read-distribution.py' for RSeQC,`here`_.
+
 **Tophat:**
 
 Selection the Tophat additional pipeline will allow you to run Tophat in addition to the current run.
@@ -184,6 +189,11 @@ Selection the Tophat additional pipeline will allow you to run Tophat in additio
 Tophat is a popular RNA-seq alignment tool used for mapping and splice junction detection.
 
 Upon selecting the Tophat pipeline addition, you have the option of adding additional tophat command line parameters as well as IGC/TDF or BigWig conversions.
+
+The Tophat pipeline also has an option to generate RSeQC reports.
+For more information on the RSeQC reports, you can view the program used, 'read-distribution.py' for RSeQC,`here`_.
+
+.. _here: http://rseqc.sourceforge.net/#read-distribution-py
 
 **ChipSeq:**
 
