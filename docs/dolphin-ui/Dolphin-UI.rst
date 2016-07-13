@@ -23,3 +23,4 @@ Contents:
    tablecreator
    profile
    debrowser
+   devnotes
