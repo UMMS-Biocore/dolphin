@@ -2,7 +2,10 @@
 Quick Start Guide
 *****************
 
-This guide will walk you through how to starty using dolphin workflows.
+This guide will walk you through how to starty using dolphin workflows. 
+
+!!! Warning: Dolphin docker aimed for developers. If you are going to use dolphin, please use `Quick Start Guide for UI http://dolphin.readthedocs.io/en/master/dolphin-ui/quickstart.html`_ section !!!
+
 
 
 General
