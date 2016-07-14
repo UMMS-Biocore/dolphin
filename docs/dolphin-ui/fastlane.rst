@@ -157,6 +157,12 @@ Filling out this section is optional.
 Submission
 ==========
 
+**Warning**
+
+**Submitting to an already used processed directory will overwrite your previous run using that directory.**
+**This could potentially mess with processed data, resulting in errors and inaccurate data.**
+**Please be careful when choosing a process directory, unique directories for each new import are suggested.**
+
 Before you get ready to submit, make sure to check which group you wish to submit under and who has permissions to view your data.
 
 .. image:: dolphin_pics/fastlane_perms.png
