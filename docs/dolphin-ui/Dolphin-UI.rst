@@ -22,5 +22,6 @@ Contents:
    ngsplots
    tablecreator
    profile
+   encode
    debrowser
    devnotes
