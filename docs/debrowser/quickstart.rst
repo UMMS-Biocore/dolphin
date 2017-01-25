@@ -32,6 +32,18 @@ To view the entire demo data file, you can download this `demo set`_.  For an ex
 
 .. _advanced demo: http://bioinfo.umassmed.edu/pub/debrowser/advanced_demo.tsv
 
+The TSV files used to describe the quantification counts are similar to this:
+
+IE:
+
+=====  =====  =====  =====  =====  =====
+gene   trans   exp1   exp2  cont1  cont2
+=====  =====  =====  =====  =====  =====
+DQ714  uc007   0.00   0.00   0.00   0.00
+DQ554  uc008   0.00   0.00   0.00   0.00
+AK028  uc011   2.00   1.29   0.00   0.00
+=====  =====  =====  =====  =====  =====
+
 DEBrowser also accepts TSV's via hyperlink by following a few conversion steps.  First, using the API provided by
 Dolphin, we will convert TSV into an html represented TSV using this website:
 
@@ -82,7 +94,6 @@ The finished product of the link will look like this:
 
 *ub/debrowser/advanced_demo.tsv&format=JSON&title=no*
 
-
 Inputting this URL into your browser will automatically load in that tsv to be analyzed by DEBrowser!
 
 For more information about the input file, please visit our DESeq/DEBrowser tab within Readthedocs.
@@ -113,6 +124,9 @@ In addition to the all-to-all plot,
 you can also view a heatmap representation of your data as well as a Principal Component Analysis (PCA) plot by selecting
 the specific plot option on the left panel under 'QC Plots'.  You can also select the type of clustering and distance method for
 the heatmap produced to further customize your quality control measures.
+
+.. image:: debrowser_pics/intro_sidebar.png
+	:align: center
 
 .. image:: debrowser_pics/intro_qc_all2all.png
 	:align: center
@@ -225,12 +239,17 @@ For additional information about the distance methods used, you can consult `her
 For distances other than 'cor', the distance function defined will be ( 1 - (the correlation between samples)).
 Each qc plot also has options to adjust the plot height and width, as well as a download button for a pdf output located above each plot.
 For the Heatmap, you can also view an interactive session of the heatmap by selecting the 'Interactive' checkbox before submitting your
-heatmap request.  Make sure that before selecting the interactive heatmap option that your dataset being used is ''Up+down'.
+heatmap request.  Make sure that before selecting the interactive heatmap option that your dataset being used is 'Up+down'.
 Just like in the Main Plots, you can click and drag to create a selection.  To select a specific portion of the heatmap, make sure
 to highlight the middle of the heatmap gene box in order to fully select a specific gene.  This selection can be used later within the
 GO Term plots for specific queries on your selection.
 
 .. image:: debrowser_pics/interactive_heatmap.png
+	:align: center
+	
+Your selection will also zoom in for better viewing resolution.
+	
+.. image:: debrowser_pics/interactive_heatmap_zoom.png
 	:align: center
 
 GO Term Plots
