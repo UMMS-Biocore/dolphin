@@ -23,19 +23,19 @@ Once the HPCC Admins group receives your registration form, they will send an em
 
 After it’s approved you will receive an email from the HPCC Admins group with your HPCC account user name.
 
-**Joining the Galaxy Group**
+**Joining the Dolphin Group**
 
-Once you have your Cluster account, you're going to want to email the helpdesk@umassmed.edu to join the galaxy group.
+Once you have your Cluster account, you're going to want to email to hpcc-support@umassmed.edu to join the galaxy group.
 
-Make sure to CC hpcc-support@umassmed.edu
+Make sure to CC biocore@umassmed.edu
 
-**Log Into Galaxy**
+**Log Into Dolphin**
 
-In order to make sure you have access to our tools and pipelines, you're going to want to log into 'galaxy.umassmed.edu' to see if you have permissions.
+In order to make sure you have access to our tools and pipelines, you're going to want to log into 'dolphin.umassmed.edu' to see if you have permissions.
 
 If you are able to log in, then you should be all set.
 
-**Galaxy Keys**
+**Dolphin Keys**
 
 In order for Dolphin to act on your behalf and use the pipeline tools we have available for you, you're going to need to run a script to give us permissions.
 
