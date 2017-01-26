@@ -337,7 +337,7 @@ ENCODE Submissions Page
 
 If you click on the bottom right button labeled 'View Encode Submissions', you will be taken to a new page with some information about your previous submissions.
 
-.. image:: dolphin_pics/encode_btach_subs.png
+.. image:: dolphin_pics/encode_batch_subs.png
 	:align: center
 
 .. image:: dolphin_pics/encode_sample_subs.png
