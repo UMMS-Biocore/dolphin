@@ -19,9 +19,9 @@ Registration for the cluster can be found at `this address`_
 
 .. _this address: https://www.umassrc.org/hpc/
 
-Once the HPCC Admins group receives your registration form, they will send an email to your PI requesting the PI’s permission to give you access.
+Once the HPCC Admins group receives your registration form, they will send an email to your PI requesting the PI's permission to give you access.
 
-After it’s approved you will receive an email from the HPCC Admins group with your HPCC account user name.
+After it's approved you will receive an email from the HPCC Admins group with your HPCC account user name.
 
 **Joining the Dolphin Group**
 
